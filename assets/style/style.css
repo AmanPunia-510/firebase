@@ -45,7 +45,6 @@ body {
 .stay_card:hover h4 {
   color: white;
 }
-
 @media (min-width: 1200px) {
   .mw_386 {
     max-width: 386px;

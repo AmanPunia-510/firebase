@@ -1,1941 +1,1242 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link
-      rel="shortcut icon"
-      href="./assets/images/svg/favicon.svg"
-      type="image/x-icon"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Primary Meta Tags -->
-    <title>KeepSL - Automated Algorithm Platform</title>
 
-    <meta name="title" content="Automated Algorithm Platform" />
-    <meta
-      name="description"
-      content="Smooth hassel free Automated trading platform with features Conditional Strategy , Rentry/Execute and WNT and Live MTM Dashboard"
-    />
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://keep-sl.web.app/" />
-    <meta property="og:title" content="Automated Algorithm Platform" />
-    <meta
-      property="og:description"
-      content="Smooth hassel free Automated trading platform with features Conditional Strategy , Rentry/Execute and WNT and Live MTM Dashboard"
-    />
-    <meta
-      property="og:image"
-      content="https://keep-sl.web.app/assets/images/png/meta-img.png"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" href="./assets/images/svg/favicon.svg" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Primary Meta Tags -->
+  <title>KeepSL - Automated Algorithm Platform</title>
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://keep-sl.web.app/" />
-    <meta property="twitter:title" content="Automated Algorithm Platform" />
-    <meta
-      property="twitter:description"
-      content="Smooth hassel free Automated trading platform with features Conditional Strategy , Rentry/Execute and WNT and Live MTM Dashboard"
-    />
-    <meta
-      property="twitter:image"
-      content="https://keep-sl.web.app/assets/images/png/meta-img.png"
-    />
+  <meta name="title" content="Automated Algorithm Platform" />
+  <meta name="description"
+    content="Smooth hassel free Automated trading platform with features Conditional Strategy , Rentry/Execute and WNT and Live MTM Dashboard" />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://keep-sl.web.app/" />
+  <meta property="og:title" content="Automated Algorithm Platform" />
+  <meta property="og:description"
+    content="Smooth hassel free Automated trading platform with features Conditional Strategy , Rentry/Execute and WNT and Live MTM Dashboard" />
+  <meta property="og:image" content="https://keep-sl.web.app/assets/images/png/meta-img.png" />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./assets/style/root.css" />
-    <link rel="stylesheet" href="./assets/style/style.css" />
-    <!-- SWIPER SLIDER -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <!-- SLICK SLIDER LINK -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
-      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
-      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <!-- =========================================== NAVBAR ===========================================-->
-    <main class="hero_section main_top_section pb-0 pb-lg-5 position-relative">
-      <div class="position-relative hero_parent">
-        <img
-          class="hero_image position-absolute end-0 bottom_10"
-          src="./assets/images/png/hero_img.png"
-          alt="hero-image"
-        />
-        <div class="hero_first_image_shadow"></div>
-        <nav class="navbar_wrapper d-flex">
-          <div id="overlay" class="bg-in">
-            <div class="container custom_container">
-              <div class="row">
-                <div class="col-12">
-                  <div
-                    class="left d-flex justify-content-center text-center flex-column align-items-center"
-                  >
-                    <ul class="list-unstyled pt-5 fs_xxs letter_spacing_07">
-                      <li class="py-lg-3 py-2 overflow-hidden">
-                        <span class="d-inline-block section-1">
-                          <a
-                            href="/"
-                            class="overlay_links text_white font_2xl fw_600"
-                            >Home</a
-                          >
-                        </span>
-                      </li>
-                      <li class="py-lg-3 py-2 overflow-hidden">
-                        <span class="d-inline-block section-2">
-                          <a
-                            href="#pricing"
-                            class="overlay_links text_white font_2xl fw_600"
-                          >
-                            Features</a
-                          >
-                        </span>
-                      </li>
-                      <li class="py-lg-3 py-2 overflow-hidden">
-                        <span class="d-inline-block section-3">
-                          <a
-                            href="#faq"
-                            class="overlay_links text_white font_2xl fw_600"
-                            >FAQ</a
-                          >
-                        </span>
-                      </li>
-                      <li class="py-lg-3 py-2 overflow-hidden">
-                        <span class="d-inline-block section-4">
-                          <a
-                            href="#pricing"
-                            class="overlay_links text_white font_2xl fw_600"
-                          >
-                            Pricing</a
-                          >
-                        </span>
-                      </li>
-                      <li class="py-lg-3 py-2 overflow-hidden">
-                        <span class="d-inline-block section-5">
-                          <a
-                            href="https://app.keepsl.com/docs#/"
-                            class="overlay_links text_white font_2xl fw_600"
-                          >
-                            Documentation</a
-                          >
-                        </span>
-                      </li>
-                      <li class="py-lg-3 py-2 overflow-hidden">
-                        <span class="d-inline-block section-5">
-                          <a
-                            href="#about"
-                            class="overlay_links text_white font_2xl fw_600"
-                            >About Us</a
-                          >
-                        </span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://keep-sl.web.app/" />
+  <meta property="twitter:title" content="Automated Algorithm Platform" />
+  <meta property="twitter:description"
+    content="Smooth hassel free Automated trading platform with features Conditional Strategy , Rentry/Execute and WNT and Live MTM Dashboard" />
+  <meta property="twitter:image" content="https://keep-sl.web.app/assets/images/png/meta-img.png" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./assets/style/root.css" />
+  <link rel="stylesheet" href="./assets/style/style.css" />
+  <!-- SWIPER SLIDER -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- SLICK SLIDER LINK -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+    integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- =========================================== NAVBAR ===========================================-->
+  <main class="hero_section main_top_section pb-0 pb-lg-5 position-relative">
+    <div class="position-relative hero_parent">
+      <img class="hero_image position-absolute end-0 bottom_10" src="./assets/images/png/hero_img.png"
+        alt="hero-image" />
+      <div class="hero_first_image_shadow"></div>
+      <nav class="navbar_wrapper d-flex">
+        <div id="overlay" class="bg-in">
           <div class="container custom_container">
-            <div
-              class="nav_quantum py-3 d-flex justify-content-between align-items-center"
-            >
-              <div>
-                <a href="/">
-                  <img
-                    class="hero_logo"
-                    src="./assets/images/svg/hero-logo.svg"
-                    alt="hero-logo"
-                  />
-                </a>
-              </div>
-              <div class="d-flex align-items-center">
-                <div class="nav-items-wrap d-none d-lg-block">
-                  <ul
-                    class="nav_items_list list-unstyled align-items-center d-flex align-items-center mb-0 text-uppercase fs_xxs letter_spacing_07"
-                  >
-                    <li class="n-item pe-3 pe-xl-4 me-xl-2">
-                      <a
-                        href="/"
-                        class="nav_links font_xsd fw_600 py-1 px-2 transition"
-                        >Home</a
-                      >
+            <div class="row">
+              <div class="col-12">
+                <div class="left d-flex justify-content-center text-center flex-column align-items-center">
+                  <ul class="list-unstyled pt-5 fs_xxs letter_spacing_07">
+                    <li class="py-lg-3 py-2 overflow-hidden">
+                      <span class="d-inline-block section-1">
+                        <a href="/" class="overlay_links text_white font_2xl fw_600">Home</a>
+                      </span>
                     </li>
-                    <li class="n-item pe-3 pe-xl-4 me-xl-2">
-                      <a
-                        class="nav_links font_xsd fw_600 py-1 px-2"
-                        href="#pricing"
-                        >Features</a
-                      >
+                    <li class="py-lg-3 py-2 overflow-hidden">
+                      <span class="d-inline-block section-2">
+                        <a href="#pricing" class="overlay_links text_white font_2xl fw_600">
+                          Features</a>
+                      </span>
                     </li>
-                    <li class="n-item pe-3 pe-xl-4 me-xl-2">
-                      <a href="#faq" class="nav_links font_xsd fw_600 py-1 px-2"
-                        >FAQ</a
-                      >
+                    <li class="py-lg-3 py-2 overflow-hidden">
+                      <span class="d-inline-block section-3">
+                        <a href="#faq" class="overlay_links text_white font_2xl fw_600">FAQ</a>
+                      </span>
                     </li>
-                    <li class="n-item pe-3 pe-xl-4 me-xl-2">
-                      <a
-                        href="#pricing"
-                        class="nav_links font_xsd fw_600 py-1 px-2"
-                        >Pricing</a
-                      >
+                    <li class="py-lg-3 py-2 overflow-hidden">
+                      <span class="d-inline-block section-4">
+                        <a href="#pricing" class="overlay_links text_white font_2xl fw_600">
+                          Pricing</a>
+                      </span>
                     </li>
-                    <li class="n-item pe-3 pe-xl-4 me-xl-2">
-                      <a
-                        href="https://app.keepsl.com/docs#/"
-                        class="nav_links font_xsd fw_600 py-1 px-2"
-                        >Documentation</a
-                      >
+                    <li class="py-lg-3 py-2 overflow-hidden">
+                      <span class="d-inline-block section-5">
+                        <a href="https://app.keepsl.com/docs#/" class="overlay_links text_white font_2xl fw_600">
+                          Documentation</a>
+                      </span>
                     </li>
-                    <li class="n-item">
-                      <a
-                        href="#about"
-                        class="nav_links font_xsd fw_600 py-1 px-2"
-                        >About Us</a
-                      >
+                    <li class="py-lg-3 py-2 overflow-hidden">
+                      <span class="d-inline-block section-5">
+                        <a href="#about" class="overlay_links text_white font_2xl fw_600">About Us</a>
+                      </span>
                     </li>
                   </ul>
                 </div>
               </div>
-              <!-- TOGGLE BUTTON NAV -->
-              <div class="d-flex align-items-center">
-                <a
-                  href="https://dev-66dbrucx.us.auth0.com/login?state=hKFo2SAwVzdST0xSVHRwMkdmczZCeE5UMXdZVV9tdk5xMVIzT6FupWxvZ2luo3RpZNkgb21RR3JDb2NPRE5qSk53TEpKZGVqa0h1UUx4MFlkbU2jY2lk2SBRWXdwRTRoQml3TlZFYmRYejZ2Q0d0bllBZHp1NHdlYQ&client=QYwpE4hBiwNVEbdXz6vCGtnYAdzu4wea&protocol=oauth2&redirect_uri=https%3A%2F%2Fapp.keepsl.com%2Fcallback&response_type=code&scope=openid%20email%20profile&code_challenge=qCyUWbMHNOihjbFNtpyMXXLjo6r2CBO_z6qbE9-Dz2c&code_challenge_method=S256&max_age=172800&response_mode=form_post&nonce=638573509725170288.YmU2ZWU1MWYtYmFhOS00M2QyLTlmN2YtN2RlMDdjNjFlMTE5YjgzMjkyZDQtZGUxNC00Mjc4LWEzNTItMGZkMWVmODlkODMy&x-client-SKU=ID_NETSTANDARD2_0&x-client-ver=6.10.0.0"
-                  class="login_btn fs_xxs line_height_160 transition me-xl-2"
-                >
-                  LOG IN
+            </div>
+          </div>
+        </div>
+        <div class="container custom_container">
+          <div class="nav_quantum py-3 d-flex justify-content-between align-items-center">
+            <div>
+              <a href="/">
+                <img class="hero_logo" src="./assets/images/svg/hero-logo.svg" alt="hero-logo" />
+              </a>
+            </div>
+            <div class="d-flex align-items-center">
+              <div class="nav-items-wrap d-none d-lg-block">
+                <ul
+                  class="nav_items_list list-unstyled align-items-center d-flex align-items-center mb-0 text-uppercase fs_xxs letter_spacing_07">
+                  <li class="n-item pe-3 pe-xl-4 me-xl-2">
+                    <a href="/" class="nav_links font_xsd fw_600 py-1 px-2 transition">Home</a>
+                  </li>
+                  <li class="n-item pe-3 pe-xl-4 me-xl-2">
+                    <a class="nav_links font_xsd fw_600 py-1 px-2" href="#pricing">Features</a>
+                  </li>
+                  <li class="n-item pe-3 pe-xl-4 me-xl-2">
+                    <a href="#faq" class="nav_links font_xsd fw_600 py-1 px-2">FAQ</a>
+                  </li>
+                  <li class="n-item pe-3 pe-xl-4 me-xl-2">
+                    <a href="#pricing" class="nav_links font_xsd fw_600 py-1 px-2">Pricing</a>
+                  </li>
+                  <li class="n-item pe-3 pe-xl-4 me-xl-2">
+                    <a href="https://app.keepsl.com/docs#/"
+                      class="nav_links font_xsd fw_600 py-1 px-2">Documentation</a>
+                  </li>
+                  <li class="n-item">
+                    <a href="#about" class="nav_links font_xsd fw_600 py-1 px-2">About Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- TOGGLE BUTTON NAV -->
+            <div class="d-flex align-items-center">
+              <a href="https://dev-66dbrucx.us.auth0.com/login?state=hKFo2SAwVzdST0xSVHRwMkdmczZCeE5UMXdZVV9tdk5xMVIzT6FupWxvZ2luo3RpZNkgb21RR3JDb2NPRE5qSk53TEpKZGVqa0h1UUx4MFlkbU2jY2lk2SBRWXdwRTRoQml3TlZFYmRYejZ2Q0d0bllBZHp1NHdlYQ&client=QYwpE4hBiwNVEbdXz6vCGtnYAdzu4wea&protocol=oauth2&redirect_uri=https%3A%2F%2Fapp.keepsl.com%2Fcallback&response_type=code&scope=openid%20email%20profile&code_challenge=qCyUWbMHNOihjbFNtpyMXXLjo6r2CBO_z6qbE9-Dz2c&code_challenge_method=S256&max_age=172800&response_mode=form_post&nonce=638573509725170288.YmU2ZWU1MWYtYmFhOS00M2QyLTlmN2YtN2RlMDdjNjFlMTE5YjgzMjkyZDQtZGUxNC00Mjc4LWEzNTItMGZkMWVmODlkODMy&x-client-SKU=ID_NETSTANDARD2_0&x-client-ver=6.10.0.0"
+                class="login_btn fs_xxs line_height_160 transition me-xl-2">
+                LOG IN
+              </a>
+              <a href="https://dev-66dbrucx.us.auth0.com/login?state=hKFo2SAwVzdST0xSVHRwMkdmczZCeE5UMXdZVV9tdk5xMVIzT6FupWxvZ2luo3RpZNkgb21RR3JDb2NPRE5qSk53TEpKZGVqa0h1UUx4MFlkbU2jY2lk2SBRWXdwRTRoQml3TlZFYmRYejZ2Q0d0bllBZHp1NHdlYQ&client=QYwpE4hBiwNVEbdXz6vCGtnYAdzu4wea&protocol=oauth2&redirect_uri=https%3A%2F%2Fapp.keepsl.com%2Fcallback&response_type=code&scope=openid%20email%20profile&code_challenge=qCyUWbMHNOihjbFNtpyMXXLjo6r2CBO_z6qbE9-Dz2c&code_challenge_method=S256&max_age=172800&response_mode=form_post&nonce=638573509725170288.YmU2ZWU1MWYtYmFhOS00M2QyLTlmN2YtN2RlMDdjNjFlMTE5YjgzMjkyZDQtZGUxNC00Mjc4LWEzNTItMGZkMWVmODlkODMy&x-client-SKU=ID_NETSTANDARD2_0&x-client-ver=6.10.0.0"
+                class="sign_up_btn fs_xxs letter_spacing_07 transition ms-1 me-3 me-sm-4 me-lg-0">
+                SIGN UP
+              </a>
+
+              <div id="main-menu" class="hamburger_menu d-inline-block d-lg-none">
+                <span class="first"></span>
+                <span class="sec"></span>
+                <span class="third"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- =========================================== HERO SECTION START ===========================================-->
+      <div class="pt-4 pt-sm-5 py-sm-5 position-relative overflow-hidden" id="home">
+        <div class="container custom_container">
+          <div class="row mt-0 mt-md-5 mt-lg-0">
+            <div class="col-12 col-lg-8 mt-0 mt-lg-4 pt-2">
+              <p
+                class="fs_xs fw_600 text-white mb-1 hero_para px-3 py-2 line_height_125 text-uppercase letter_spacing_07 m-lg-0">
+                KeepSL empowers you to create automated Strategies
+              </p>
+              <h2 class="fs_4xl fw-bold text-white my-3 pb-0 pb-sm-1 line_height_125 letter_spacing_02">
+                Automated<br class="d-none d-lg-block" />
+                Algorithm
+                <span class="platform_blue_text"><br />Platform</span>
+              </h2>
+              <p class="fs_md text-white opacity_75 line_height_160 mx_432 MB-2 mb-sm-4 m-lg-0 mb-lg-4">
+                Smooth hassel free Automated trading platform with features
+                Conditional Strategy , Rentry/Execute and WNT and Live MTM
+                Dashboard
+              </p>
+              <div class="d-flex justify-content-start">
+                <a href="https://dev-66dbrucx.us.auth0.com/login?state=hKFo2SAwVzdST0xSVHRwMkdmczZCeE5UMXdZVV9tdk5xMVIzT6FupWxvZ2luo3RpZNkgb21RR3JDb2NPRE5qSk53TEpKZGVqa0h1UUx4MFlkbU2jY2lk2SBRWXdwRTRoQml3TlZFYmRYejZ2Q0d0bllBZHp1NHdlYQ&client=QYwpE4hBiwNVEbdXz6vCGtnYAdzu4wea&protocol=oauth2&redirect_uri=https%3A%2F%2Fapp.keepsl.com%2Fcallback&response_type=code&scope=openid%20email%20profile&code_challenge=qCyUWbMHNOihjbFNtpyMXXLjo6r2CBO_z6qbE9-Dz2c&code_challenge_method=S256&max_age=172800&response_mode=form_post&nonce=638573509725170288.YmU2ZWU1MWYtYmFhOS00M2QyLTlmN2YtN2RlMDdjNjFlMTE5YjgzMjkyZDQtZGUxNC00Mjc4LWEzNTItMGZkMWVmODlkODMy&x-client-SKU=ID_NETSTANDARD2_0&x-client-ver=6.10.0.0"
+                  class="explore_btn fw_600 font_md line_height_175 d-flex transition mt-3 mb-4">
+                  Explore Now
+                  <span class="ms-1">
+                    <svg class="ms-2" width="24" height="24" viewBox="0 0 25 25" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12.4951 22.608C18.018 22.608 22.4951 18.1309 22.4951 12.608C22.4951 7.08518 18.018 2.60803 12.4951 2.60803C6.97227 2.60803 2.49512 7.08518 2.49512 12.608C2.49512 18.1309 6.97227 22.608 12.4951 22.608Z"
+                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M12.4951 16.608L16.4951 12.608L12.4951 8.60803" stroke="white" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M8.49512 12.608H16.4951" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </span>
                 </a>
-                <a
-                  href="https://dev-66dbrucx.us.auth0.com/login?state=hKFo2SAwVzdST0xSVHRwMkdmczZCeE5UMXdZVV9tdk5xMVIzT6FupWxvZ2luo3RpZNkgb21RR3JDb2NPRE5qSk53TEpKZGVqa0h1UUx4MFlkbU2jY2lk2SBRWXdwRTRoQml3TlZFYmRYejZ2Q0d0bllBZHp1NHdlYQ&client=QYwpE4hBiwNVEbdXz6vCGtnYAdzu4wea&protocol=oauth2&redirect_uri=https%3A%2F%2Fapp.keepsl.com%2Fcallback&response_type=code&scope=openid%20email%20profile&code_challenge=qCyUWbMHNOihjbFNtpyMXXLjo6r2CBO_z6qbE9-Dz2c&code_challenge_method=S256&max_age=172800&response_mode=form_post&nonce=638573509725170288.YmU2ZWU1MWYtYmFhOS00M2QyLTlmN2YtN2RlMDdjNjFlMTE5YjgzMjkyZDQtZGUxNC00Mjc4LWEzNTItMGZkMWVmODlkODMy&x-client-SKU=ID_NETSTANDARD2_0&x-client-ver=6.10.0.0"
-                  class="sign_up_btn fs_xxs letter_spacing_07 transition ms-1 me-3 me-sm-4 me-lg-0"
-                >
-                  SIGN UP
-                </a>
-
-                <div
-                  id="main-menu"
-                  class="hamburger_menu d-inline-block d-lg-none"
-                >
-                  <span class="first"></span>
-                  <span class="sec"></span>
-                  <span class="third"></span>
+              </div>
+              <div class="pt-sm-3 d-flex align-items-center justify-content-start">
+                <div class="image_box d-flex">
+                  <img class="girl_img" src="./assets/images/svg/girl-image-first.svg" alt="girl-image-first" />
+                  <img class="girl_img" src="./assets/images/svg/girl-image-second.svg" alt="girl-image-second" />
+                  <img src="./assets/images/svg/girl-image-third.svg" alt="girl-image-third" />
                 </div>
+                <h4 class="fs_lg text-white fw-bold mx-3 mb-2 mt-2 mt-md-0 mb-md-0">
+                  38,182
+                </h4>
+                <p class="mb-0 fs_xs text-white">Satisfied User</p>
               </div>
             </div>
           </div>
-        </nav>
-        <!-- =========================================== HERO SECTION START ===========================================-->
-        <div
-          class="pt-4 pt-sm-5 py-sm-5 position-relative overflow-hidden"
-          id="home"
-        >
-          <div class="container custom_container">
-            <div class="row mt-0 mt-md-5 mt-lg-0">
-              <div class="col-12 col-lg-8 mt-0 mt-lg-4 pt-2">
-                <p
-                  class="fs_xs fw_600 text-white mb-1 hero_para px-3 py-2 line_height_125 text-uppercase letter_spacing_07 m-lg-0"
-                >
-                  KeepSL empowers you to create automated Strategies
-                </p>
-                <h2
-                  class="fs_4xl fw-bold text-white my-3 pb-0 pb-sm-1 line_height_125 letter_spacing_02"
-                >
-                  Automated<br class="d-none d-lg-block" />
-                  Algorithm
-                  <span class="platform_blue_text"><br />Platform</span>
-                </h2>
-                <p
-                  class="fs_md text-white opacity_75 line_height_160 mx_432 MB-2 mb-sm-4 m-lg-0 mb-lg-4"
-                >
-                  Smooth hassel free Automated trading platform with features
-                  Conditional Strategy , Rentry/Execute and WNT and Live MTM
-                  Dashboard
-                </p>
-                <div class="d-flex justify-content-start">
-                  <a                   href="https://dev-66dbrucx.us.auth0.com/login?state=hKFo2SAwVzdST0xSVHRwMkdmczZCeE5UMXdZVV9tdk5xMVIzT6FupWxvZ2luo3RpZNkgb21RR3JDb2NPRE5qSk53TEpKZGVqa0h1UUx4MFlkbU2jY2lk2SBRWXdwRTRoQml3TlZFYmRYejZ2Q0d0bllBZHp1NHdlYQ&client=QYwpE4hBiwNVEbdXz6vCGtnYAdzu4wea&protocol=oauth2&redirect_uri=https%3A%2F%2Fapp.keepsl.com%2Fcallback&response_type=code&scope=openid%20email%20profile&code_challenge=qCyUWbMHNOihjbFNtpyMXXLjo6r2CBO_z6qbE9-Dz2c&code_challenge_method=S256&max_age=172800&response_mode=form_post&nonce=638573509725170288.YmU2ZWU1MWYtYmFhOS00M2QyLTlmN2YtN2RlMDdjNjFlMTE5YjgzMjkyZDQtZGUxNC00Mjc4LWEzNTItMGZkMWVmODlkODMy&x-client-SKU=ID_NETSTANDARD2_0&x-client-ver=6.10.0.0"
+          <div class="col-11 col-md-9 m-auto custom_height"></div>
+        </div>
+      </div>
+    </div>
+  </main>
 
-                    class="explore_btn fw_600 font_md line_height_175 d-flex transition mt-3 mb-4"
-                  >
-                    Explore Now
-                    <span class="ms-1">
-                      <svg
-                        class="ms-2"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 25 25"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M12.4951 22.608C18.018 22.608 22.4951 18.1309 22.4951 12.608C22.4951 7.08518 18.018 2.60803 12.4951 2.60803C6.97227 2.60803 2.49512 7.08518 2.49512 12.608C2.49512 18.1309 6.97227 22.608 12.4951 22.608Z"
-                          stroke="white"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M12.4951 16.608L16.4951 12.608L12.4951 8.60803"
-                          stroke="white"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M8.49512 12.608H16.4951"
-                          stroke="white"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-                <div
-                  class="pt-sm-3 d-flex align-items-center justify-content-start"
-                >
-                  <div class="image_box d-flex">
-                    <img
-                      class="girl_img"
-                      src="./assets/images/svg/girl-image-first.svg"
-                      alt="girl-image-first"
-                    />
-                    <img
-                      class="girl_img"
-                      src="./assets/images/svg/girl-image-second.svg"
-                      alt="girl-image-second"
-                    />
-                    <img
-                      src="./assets/images/svg/girl-image-third.svg"
-                      alt="girl-image-third"
-                    />
-                  </div>
-                  <h4
-                    class="fs_lg text-white fw-bold mx-3 mb-2 mt-2 mt-md-0 mb-md-0"
-                  >
-                    38,182
-                  </h4>
-                  <p class="mb-0 fs_xs text-white">Satisfied User</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-11 col-md-9 m-auto custom_height"></div>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <section class="pt-5 mt-5">
-      <div class="container custom_container">
-        <div
-          class="row justify-content-between align-items-center py-lg-5 pt-5"
-        >
-          <div class="col-xl-5 col-lg-6 order-2 order-lg-1">
-            <h2 class="sub_heading">Build or choose strategies</h2>
-            <p class="sub_para py-sm-3 pb-sm-3 pb-1 pt-2 mw_400">
-              With Tradetron, creativity meets efficiency. Design your own
-              trading algorithms or select from our marketplace of pre-tested
-              strategies. No coding required.
-            </p>
-            <button
-              class="btn-get-start d-flex align-items-center justify-content-center fw-semibold fs_xs text-white text-nowrap"
-            >
-              Get Started
-              <div class="wh-btnArrow">
-                <svg
-                  width="25"
-                  height="25"
-                  viewBox="0 0 25 25"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M19.312 5.87793L5.31201 19.8779"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M19.312 16.1479V5.87793H9.04201"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-            </button>
-          </div>
-          <div class="col-lg-6 col-xl-7">
-            <img width="100%" src="./assets/images/svg/build.svg" alt="build" />
-          </div>
-        </div>
-      </div>
-      <div class="container custom_container">
-        <div class="row justify-content-between align-items-center pb-5">
-          <div class="col-lg-6">
-            <img
-              width="100%"
-              src="./assets/images/svg/real-time.svg"
-              alt="real-time"
-            />
-          </div>
-          <div class="col-lg-6">
-            <h2 class="sub_heading">Real-time monitoring and analytics</h2>
-            <p class="sub_para py-sm-3 pb-3 pt-2 mw_386">
-              Stay on top of your trading with real-time insights and analytics.
-              Make informed decisions and tweak your strategies on the go.
-            </p>
-            <button
-              class="btn-get-start d-flex align-items-center justify-content-center fw-semibold fs_xs text-white text-nowrap"
-            >
-              Get Started
-              <div class="wh-btnArrow">
-                <svg
-                  width="25"
-                  height="25"
-                  viewBox="0 0 25 25"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M19.312 5.87793L5.31201 19.8779"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M19.312 16.1479V5.87793H9.04201"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="container custom_container">
-        <div
-          class="row justify-content-between align-items-center py-sm-5 pb-5"
-        >
-          <div class="col-lg-6 order-2 order-lg-1">
-            <h2 class="sub_heading">Ready to revolutionize your trading?</h2>
-            <p class="sub_para py-sm-3 pb-3 pt-2 mw_400">
-              Join Tradetron today and be part of the algo trading evolution in
-              the US. Sign up now and start with a free demo account. Your
-              journey towards automated trading success begins here.
-            </p>
-            <button
-              class="btn-get-start d-flex align-items-center justify-content-center fw-semibold fs_xs text-white text-nowrap"
-            >
-              Get Started
-              <div class="wh-btnArrow">
-                <svg
-                  width="25"
-                  height="25"
-                  viewBox="0 0 25 25"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M19.312 5.87793L5.31201 19.8779"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M19.312 16.1479V5.87793H9.04201"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-            </button>
-          </div>
-          <div class="col-lg-6 order-1 order-lg-2">
-            <img width="100%" src="./assets/images/svg/ready.svg" alt="ready" />
-          </div>
-        </div>
-      </div>
-      <div class="container custom_container">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-lg-6">
-            <div class="slick-slider">
-              <div class="slider-items">
-                <img
-                  src="./assets/images/png/SliderImg.png"
-                  alt="brokers images"
-                  class="w-100"
-                />
-              </div>
-              <div class="slider-items">
-                <img
-                  src="./assets/images/png/SliderImg.png"
-                  alt="brokers images"
-                  class="w-100"
-                />
-              </div>
-              <div class="slider-items">
-                <img
-                  src="./assets/images/png/SliderImg.png"
-                  alt="brokers images"
-                  class="w-100"
-                />
-              </div>
-              <div class="slider-items">
-                <img
-                  src="./assets/images/png/SliderImg.png"
-                  alt="brokers images"
-                  class="w-100"
-                />
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-lg-6 d-flex align-items-start justify-content-center flex-column ps-xxl-5 pb-4 pb-lg-0"
-          >
-            <h2 class="sub_heading">50+ Trusted Brokers We Partner With</h2>
-            <p class="sub_para py-sm-3 pb-3 pt-2 mw_386">
-              We collaborate with industry-leading brokers to provide you with
-              seamless and secure integration. Explore our network of reputable
-              brokers that ensure reliability.
-            </p>
-            <button
-              class="btn-get-start d-flex align-items-center justify-content-center fw-semibold fs_xs text-white text-nowrap"
-            >
-              Get Started
-              <div class="wh-btnArrow">
-                <svg
-                  width="25"
-                  height="25"
-                  viewBox="0 0 25 25"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M19.312 5.87793L5.31201 19.8779"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M19.312 16.1479V5.87793H9.04201"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!---------------- TABLE SECTION -------------->
-    <div class="mt-5" id="pricing">
-      <div class="mt-5 py-md-5 pb-xl-5">
-        <div class="table_container">
-          <h2 class="text-center sub_heading lh_140">
-            Choose one of our plans
-          </h2>
-          <p
-            class="mt-3 pt-1 text-center choose_plan_para mx-auto sub_para lh_sm_150 mb-0"
-          >
-            Comprehensive packages and pricing with information on Accounts and
-            Strategies
+  <section class="pt-5 mt-5">
+    <div class="container custom_container">
+      <div class="row justify-content-between align-items-center py-lg-5 pt-5">
+        <div class="col-xl-5 col-lg-6 order-2 order-lg-1">
+          <h2 class="sub_heading">Build or choose strategies</h2>
+          <p class="sub_para py-sm-3 pb-sm-3 pb-1 pt-2 mw_400">
+            With Tradetron, creativity meets efficiency. Design your own
+            trading algorithms or select from our marketplace of pre-tested
+            strategies. No coding required.
           </p>
-          <div class="mt-3 pt-1">
-            <p
-              class="text-center fw_600 fs_3xs secondary_text_light_black lh_126 opacity_50 mb-2 pb-1 text-uppercase"
-            >
-              Type of subscription plans
-            </p>
-            <div
-              class="table_tabs_parent d-flex justify-content-between bg_text_aqua_haze"
-            >
-              <button
-                id="time-month"
-                onclick="handleSwitchToMonthly()"
-                class="d-flex gap-sm-1 gap-3 align-items-center table_tabs_button fw_600 fs_md lh_160 text_rangoon_green"
-              >
-                <span class="opacity_70">Monthly</span>
-              </button>
-              <button
-                id="time-quarter"
-                onclick="handleSwitchToQuarterly()"
-                class="d-flex gap-sm-1 gap-sm-3 gap-2 justify-content-between align-items-center table_tabs_button fw_600 fs_md lh_160 text_rangoon_green"
-              >
-                <span class="opacity_70">Quarterly</span>
-                <span
-                  class="bg_light_blue py-1 px-sm-2 br_100 text-white fw_600 fs_3xs text-uppercase save_button"
-                  >Save 7%</span
-                >
-              </button>
-              <button
-                id="time-year"
-                onclick="handleSwitchToYearly()"
-                class="d-flex gap-sm-1 gap-sm-3 gap-2 justify-content-between align-items-center table_tabs_button fw_600 fs_md lh_160 text_rangoon_green"
-              >
-                <span class="opacity_70">Yearly</span>
-                <span
-                  class="bg_light_blue py-1 px-sm-2 br_100 text-white fw_600 fs_3xs text-uppercase save_button d-flex"
-                  >Save 17%</span
-                >
-              </button>
+          <button
+            class="btn-get-start d-flex align-items-center justify-content-center fw-semibold fs_xs text-white text-nowrap">
+            Get Started
+            <div class="wh-btnArrow">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.312 5.87793L5.31201 19.8779" stroke="white" stroke-width="2" stroke-miterlimit="10"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M19.312 16.1479V5.87793H9.04201" stroke="white" stroke-width="2" stroke-miterlimit="10"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+          </button>
+        </div>
+        <div class="col-lg-6 col-xl-7">
+          <img width="100%" src="./assets/images/svg/build.svg" alt="build" />
+        </div>
+      </div>
+    </div>
+    <div class="container custom_container">
+      <div class="row justify-content-between align-items-center pb-5">
+        <div class="col-lg-6">
+          <img width="100%" src="./assets/images/svg/real-time.svg" alt="real-time" />
+        </div>
+        <div class="col-lg-6">
+          <h2 class="sub_heading">Real-time monitoring and analytics</h2>
+          <p class="sub_para py-sm-3 pb-3 pt-2 mw_386">
+            Stay on top of your trading with real-time insights and analytics.
+            Make informed decisions and tweak your strategies on the go.
+          </p>
+          <button
+            class="btn-get-start d-flex align-items-center justify-content-center fw-semibold fs_xs text-white text-nowrap">
+            Get Started
+            <div class="wh-btnArrow">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.312 5.87793L5.31201 19.8779" stroke="white" stroke-width="2" stroke-miterlimit="10"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M19.312 16.1479V5.87793H9.04201" stroke="white" stroke-width="2" stroke-miterlimit="10"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container custom_container">
+      <div class="row justify-content-between align-items-center py-sm-5 pb-5">
+        <div class="col-lg-6 order-2 order-lg-1">
+          <h2 class="sub_heading">Ready to revolutionize your trading?</h2>
+          <p class="sub_para py-sm-3 pb-3 pt-2 mw_400">
+            Join Tradetron today and be part of the algo trading evolution in
+            the US. Sign up now and start with a free demo account. Your
+            journey towards automated trading success begins here.
+          </p>
+          <button
+            class="btn-get-start d-flex align-items-center justify-content-center fw-semibold fs_xs text-white text-nowrap">
+            Get Started
+            <div class="wh-btnArrow">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.312 5.87793L5.31201 19.8779" stroke="white" stroke-width="2" stroke-miterlimit="10"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M19.312 16.1479V5.87793H9.04201" stroke="white" stroke-width="2" stroke-miterlimit="10"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+          </button>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2">
+          <img width="100%" src="./assets/images/svg/ready.svg" alt="ready" />
+        </div>
+      </div>
+    </div>
+    <div class="container custom_container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-6">
+          <div class="slick-slider">
+            <div class="slider-items">
+              <img src="./assets/images/png/SliderImg.png" alt="brokers images" class="w-100" />
+            </div>
+            <div class="slider-items">
+              <img src="./assets/images/png/SliderImg.png" alt="brokers images" class="w-100" />
+            </div>
+            <div class="slider-items">
+              <img src="./assets/images/png/SliderImg.png" alt="brokers images" class="w-100" />
+            </div>
+            <div class="slider-items">
+              <img src="./assets/images/png/SliderImg.png" alt="brokers images" class="w-100" />
             </div>
           </div>
-          <div class="mt-4 pt-3 d-lg-block d-none overflow_2xl_scroll px-3">
-            <div class="row flex_nowrap position-relative">
-              <div class="table_primary_col_width p_0">
-                <div class="py-4 d-flex flex-column gap-3">
-                  <p class="mb-0 fw-bold fs_xl text_rangoon_green lh_150">
-                    Price
-                  </p>
-                  <p
-                    class="mb-0 fw-normal fs_sm text_rangoon_green lh_166 opacity_70"
-                  >
-                    Features / Plans
-                  </p>
-                </div>
-                <div class="py-4 h_80">
-                  <p class="mb-0 fw_600 fs_md text_rangoon_green lh_160">
-                    Private Strategies you can create 
-                  </p>
-                </div>
-                <div class="py-4 h_80">
-                  <p class="mb-0 fw_600 fs_md text_rangoon_green lh_160">
-                    Public Strategies you can create 
-                  </p>
-                </div>
-                <div class="py-4 h_80">
-                  <p class="mb-0 fw_600 fs_md text_rangoon_green lh_160">
-                    Algo strategies you can deploy  
-                  </p>
-                </div>
-                <div class="py-4 h_80">
-                  <p class="mb-0 fw_600 fs_md text_rangoon_green lh_160">
-                    Stockbag you can deploy 
-                  </p>
-                </div>
-                <div class="py-4 h_80">
-                  <p class="mb-0 fw_600 fs_md text_rangoon_green lh_160">
-                    Paper Trading Executions
-                  </p>
-                </div>
-                <div class="py-4 h_80">
-                  <p class="mb-0 fw_600 fs_md text_rangoon_green lh_160">
-                    Live-Auto Executions 
-                  </p>
-                </div>
-                <div class="py-4 d-flex gap-2 align-items-center h_80">
-                  <p class="mb-0 fw_600 fs_md text_rangoon_green lh_160">
-                    Trade execution notifications 
-                  </p>
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM10.9999 16.75C10.9999 16.1977 11.4476 15.75 11.9999 15.75C12.5522 15.75 12.9999 16.1977 12.9999 16.75C12.9999 17.3023 12.5522 17.75 11.9999 17.75C11.4476 17.75 10.9999 17.3023 10.9999 16.75ZM14.9441 11.6317C14.4935 12.34 13.8036 12.8628 12.9999 13.105V13.75C12.9999 14.3023 12.5522 14.75 11.9999 14.75C11.4476 14.75 10.9999 14.3023 10.9999 13.75V12.25C10.9999 11.9848 11.1053 11.7304 11.2928 11.5429C11.4803 11.3554 11.7347 11.25 11.9999 11.25C12.284 11.25 12.5622 11.1693 12.8022 11.0173C13.0422 10.8654 13.2342 10.6484 13.3557 10.3916C13.4772 10.1348 13.5233 9.8488 13.4886 9.56684C13.4539 9.28489 13.3398 9.01858 13.1597 8.79891C12.9796 8.57924 12.7408 8.41523 12.4711 8.32597C12.2014 8.23671 11.9119 8.22587 11.6363 8.29471C11.3607 8.36354 11.1103 8.50923 10.9143 8.71482C10.5916 9.05313 10.1572 9.38155 9.69882 9.28973L9.54753 9.25943C9.00596 9.15095 8.64313 8.61256 8.89989 8.12353C9.11655 7.71089 9.415 7.34264 9.78069 7.04299C10.4066 6.53015 11.1907 6.24994 11.9999 6.25C12.8393 6.25254 13.6498 6.55647 14.2839 7.10646C14.918 7.65644 15.3335 8.41588 15.4546 9.24647C15.5758 10.0771 15.3946 10.9235 14.9441 11.6317Z"
-                      fill="#A1A1AA"
-                    />
-                  </svg>
-                </div>
-                <div class="py-4 h_80">
-                  <p class="mb-0 fw_600 fs_md text_rangoon_green lh_160">
-                    API to connect from other platforms 
-                  </p>
-                </div>
-              </div>
-              <div
-                class="table_secondary_col_width p_0 table_column_hover br_8 transition_03"
-              >
-                <div class="pt-3 pb-4 px-3 d-flex flex-column gap-3">
-                  <p
-                    class="mb-0 fw_600 fs_md lh_160 text_santa_grey text_blue_lotus_text_hover transition_03"
-                  >
-                    Free
-                  </p>
-                  <p class="mb-0 fw-bold fs_2xl lh_144 text_rangoon_green">
-                    ₹0
-                  </p>
-                </div>
-                <div class="py-4 px-3 h_80 d-flex align-items-center">
-                  <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
-                    10
-                  </p>
-                </div>
-                <div class="py-4 px-3 h_80 d-flex align-items-center">
-                  <img
-                    src="./assets/images/svg/red-cross.svg"
-                    alt="red-cross-icon"
-                  />
-                </div>
-                <div class="py-4 px-3 h_80 d-flex align-items-center">
-                  <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
-                    1
-                  </p>
-                </div>
-                <div class="py-4 px-3 h_80 d-flex align-items-center">
-                  <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
-                    1
-                  </p>
-                </div>
-                <div class="py-4 px-3 h_80 d-flex align-items-center">
-                  <img
-                    src="./assets/images/svg/green-right.svg"
-                    alt="green-right-icon"
-                  />
-                </div>
-                <div class="py-4 px-3 h_80 d-flex align-items-center">
-                  <img
-                    src="./assets/images/svg/red-cross.svg"
-                    alt="red-cross-icon"
-                  />
-                </div>
-                <div class="py-4 px-3 h_80 d-flex align-items-center">
-                  <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
-                    Email/Call Access Support
-                  </p>
-                </div>
-                <div class="py-4 px-3 h_80 d-flex align-items-center">
-                  <img
-                    src="./assets/images/svg/green-right.svg"
-                    alt="green-right-icon"
-                  />
-                </div>
-                <div class="py-3 px-2">
-                  <button
-                    class="table_button d-flex justify-content-center align-items-center fw_600 transition_03 fs_xs lh_200"
-                  >
-                    Try for Free
-                  </button>
-                </div>
-              </div>
-              <div
-                class="table_secondary_col_width p_0 table_column_hover br_8 transition_03"
-              >
-                <div class="pt-3 pb-4 px-3 d-flex flex-column gap-3">
-                  <p
-                    class="mb-0 fw_600 fs_md lh_160 text_santa_grey text_blue_lotus_text_hover transition_03"
-                  >
-                    Basic
-                  </p>
-                  <p
-                    class="mb-0 fw-bold fs_2xl lh_144 text_rangoon_green opacity_100"
-                  >
-                    ₹<span
-                      class="fw-bold fs_2xl lh_144 text_rangoon_green opacity_100"
-                      id="starter"
-                      >250</span
-                    >
-                    <span class="fw-normal fs_sm lh_160 opacity_50">/mo</span>
-                  </p>
-                </div>
-                <div class="py-4 px-3 h_80 d-flex align-items-center">
-                  <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
-                    2
-                  </p>
-                </div>
-                <div class="py_10 px-3 h_80 d-flex align-items-center">
-                  <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
-                    Unlimited
-                    <span class="d-inline-block">0 on marketplace</span>
-                  </p>
-                </div>
-                <div class="py-4 px-3 h_80 d-flex align-items-center">
-                  <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
-                    1
-                  </p>
-                </div>
-                <div class="py-4 px-3 h_80 d-flex align-items-center">
-                  <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
-                    1
-                  </p>
-                </div>
-                <div class="py-4 px-3 h_80 d-flex align-items-center">
-                  <img
-                    src="./assets/images/svg/green-right.svg"
-                    alt="green-right-icon"
-                  />
-                </div>
-                <div class="py-4 px-3 h_80 d-flex align-items-center">
-                  <img
-                    src="./assets/images/svg/green-right.svg"
-                    alt="green-right-icon"
-                  />
-                </div>
-                <div class="py_10 px-3 h_80 d-flex align-items-center">
-                  <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
-                    Email/Call Access Support
-                  </p>
-                </div>
-                <div class="py-4 px-3 h_80 d-flex align-items-center">
-                  <img
-                    src="./assets/images/svg/green-right.svg"
-                    alt="green-right-icon"
-                  />
-                </div>
-                <div class="py-3 px-2">
-                  <button
-                    class="table_button d-flex justify-content-center align-items-center fw_600 transition_03 fs_xs lh_200"
-                  >
-                    Choose Plan
-                  </button>
-                </div>
-              </div>
-              <div
-                class="table_secondary_col_width p_0 table_column_hover br_8 transition_03"
-              >
-                <div class="pt-3 pb-4 px-3 d-flex flex-column gap-3">
-                  <p
-                    class="mb-0 fw_600 fs_md lh_160 text_santa_grey text_blue_lotus_text_hover transition_03"
-                  >
-                    Pro
-                  </p>
-                  <p
-                    class="mb-0 fw-bold fs_2xl lh_144 text_rangoon_green opacity_100"
-                  >
-                    ₹<span
-                      class="fw-bold fs_2xl lh_144 text_rangoon_green opacity_100"
-                      id="retail"
-                      >750</span
-                    >
-                    <span class="fw-normal fs_sm lh_160 opacity_50">/mo</span>
-                  </p>
-                </div>
-                <div class="py-4 px-3 h_80 d-flex align-items-center">
-                  <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
-                    10
-                  </p>
-                </div>
-                <div class="py_10 px-3 h_80 d-flex align-items-center">
-                  <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
-                    Unlimited
-                    <span class="d-inline-block">0 on marketplace</span>
-                  </p>
-                </div>
-                <div class="py-4 px-3 h_80 d-flex align-items-center">
-                  <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
-                    1
-                  </p>
-                </div>
-                <div class="py-4 px-3 h_80 d-flex align-items-center">
-                  <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
-                    1
-                  </p>
-                </div>
-                <div class="py-4 px-3 h_80 d-flex align-items-center">
-                  <img
-                    src="./assets/images/svg/green-right.svg"
-                    alt="green-right-icon"
-                  />
-                </div>
-                <div class="py-4 px-3 h_80 d-flex align-items-center">
-                  <img
-                    src="./assets/images/svg/green-right.svg"
-                    alt="green-right-icon"
-                  />
-                </div>
-                <div class="py_10 px-3 h_80 d-flex align-items-center">
-                  <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
-                    Email/Call Access Support
-                  </p>
-                </div>
-                <div class="py-4 px-3 h_80 d-flex align-items-center">
-                  <img
-                    src="./assets/images/svg/green-right.svg"
-                    alt="green-right-icon"
-                  />
-                </div>
-                <div class="py-3 px-2">
-                  <button
-                    class="table_button d-flex justify-content-center align-items-center transition_03 fw_600 fs_xs lh_200"
-                  >
-                    Choose Plan
-                  </button>
-                </div>
-              </div>
-              <div
-                class="table_last_col_width table_column_hover p_0 br_8 transition_03"
-              >
-                <div class="pt-3 pb-4 px-3 d-flex flex-column gap-3">
-                  <p
-                    class="mb-0 fw_600 fs_md lh_160 text_santa_grey text_blue_lotus_text_hover transition_03"
-                  >
-                    Advanced
-                  </p>
-                  <p
-                    class="mb-0 fw-bold fs_2xl lh_144 text_rangoon_green opacity_100"
-                  >
-                    ₹<span
-                      class="fw-bold fs_2xl lh_144 text_rangoon_green opacity_100"
-                      id="best-price"
-                      >1500</span
-                    >
-                    <span class="fw-normal fs_sm lh_160 opacity_50">/mo</span>
-                  </p>
-                </div>
-                <div class="py-4 px-3 h_80 d-flex align-items-center">
-                  <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
-                    25
-                  </p>
-                </div>
-                <div class="py_10 px-3 h_80 d-flex align-items-center">
-                  <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
-                    Unlimited
-                    <span class="d-inline-block">0 on marketplace</span>
-                  </p>
-                </div>
-                <div class="py-4 px-3 h_80 d-flex align-items-center">
-                  <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
-                    1
-                  </p>
-                </div>
-                <div class="py-4 px-3 h_80 d-flex align-items-center">
-                  <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
-                    1
-                  </p>
-                </div>
-                <div class="py-4 px-3 h_80 d-flex align-items-center">
-                  <img
-                    src="./assets/images/svg/green-right.svg"
-                    alt="green-right-icon"
-                  />
-                </div>
-                <div class="py-4 px-3 h_80 d-flex align-items-center">
-                  <img
-                    src="./assets/images/svg/green-right.svg"
-                    alt="green-right-icon"
-                  />
-                </div>
-                <div class="py_10 px-3 h_80 d-flex align-items-center">
-                  <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
-                    Email/Call Access Support
-                  </p>
-                </div>
-                <div class="py-4 px-3 h_80 d-flex align-items-center">
-                  <img
-                    src="./assets/images/svg/green-right.svg"
-                    alt="green-right-icon"
-                  />
-                </div>
-                <div class="py-3 px-2">
-                  <button
-                    class="table_button d-flex justify-content-center align-items-center transition_03 fw_600 fs_xs lh_200"
-                  >
-                    Choose Plan
-                  </button>
-                </div>
-              </div>
-              <div class="border_line border_line_price_bottom_position"></div>
-              <div
-                class="border_line border_line_private_strategies_position"
-              ></div>
-              <div
-                class="border_line border_line_public_strategies_position"
-              ></div>
-              <div
-                class="border_line border_line_aglo_strategies_position"
-              ></div>
-              <div class="border_line border_line_stockbag_position"></div>
-              <div
-                class="border_line border_line_paper_trending_position"
-              ></div>
-              <div class="border_line border_line_live_auto_position"></div>
-              <div class="border_line border_line_trade_position"></div>
-              <div class="border_line border_line_api_position"></div>
+        </div>
+        <div class="col-lg-6 d-flex align-items-start justify-content-center flex-column ps-xxl-5 pb-4 pb-lg-0">
+          <h2 class="sub_heading">50+ Trusted Brokers We Partner With</h2>
+          <p class="sub_para py-sm-3 pb-3 pt-2 mw_386">
+            We collaborate with industry-leading brokers to provide you with
+            seamless and secure integration. Explore our network of reputable
+            brokers that ensure reliability.
+          </p>
+          <button
+            class="btn-get-start d-flex align-items-center justify-content-center fw-semibold fs_xs text-white text-nowrap">
+            Get Started
+            <div class="wh-btnArrow">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.312 5.87793L5.31201 19.8779" stroke="white" stroke-width="2" stroke-miterlimit="10"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M19.312 16.1479V5.87793H9.04201" stroke="white" stroke-width="2" stroke-miterlimit="10"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
             </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!---------------- TABLE SECTION -------------->
+  <div class="mt-5" id="pricing">
+    <div class="mt-5 py-md-5 pb-xl-5">
+      <div class="table_container">
+        <h2 class="text-center sub_heading lh_140">
+          Choose one of our plans
+        </h2>
+        <p class="mt-3 pt-1 text-center choose_plan_para mx-auto sub_para lh_sm_150 mb-0">
+          Comprehensive packages and pricing with information on Accounts and
+          Strategies
+        </p>
+        <div class="mt-3 pt-1">
+          <p class="text-center fw_600 fs_3xs secondary_text_light_black lh_126 opacity_50 mb-2 pb-1 text-uppercase">
+            Type of subscription plans
+          </p>
+          <div class="table_tabs_parent d-flex justify-content-between bg_text_aqua_haze">
+            <button id="time-month" onclick="handleSwitchToMonthly()"
+              class="d-flex gap-sm-1 gap-3 align-items-center table_tabs_button fw_600 fs_md lh_160 text_rangoon_green">
+              <span class="opacity_70">Monthly</span>
+            </button>
+            <button id="time-quarter" onclick="handleSwitchToQuarterly()"
+              class="d-flex gap-sm-1 gap-sm-3 gap-2 justify-content-between align-items-center table_tabs_button fw_600 fs_md lh_160 text_rangoon_green">
+              <span class="opacity_70">Quarterly</span>
+              <span class="bg_light_blue py-1 px-sm-2 br_100 text-white fw_600 fs_3xs text-uppercase save_button">Save
+                7%</span>
+            </button>
+            <button id="time-year" onclick="handleSwitchToYearly()"
+              class="d-flex gap-sm-1 gap-sm-3 gap-2 justify-content-between align-items-center table_tabs_button fw_600 fs_md lh_160 text_rangoon_green">
+              <span class="opacity_70">Yearly</span>
+              <span
+                class="bg_light_blue py-1 px-sm-2 br_100 text-white fw_600 fs_3xs text-uppercase save_button d-flex">Save
+                17%</span>
+            </button>
           </div>
-          <div class="mt-4 pt-3 d-lg-none d-block px-sm-3">
-            <div class="swiper position-relative pb-5">
-              <div class="swiper-scrollbar"></div>
-              <div class="swiper-wrapper pb-5">
-                <div class="swiper-slide first_slide">
-                  <div class="table_primary_col_width p_0">
-                    <div class="py-md-4 py-2 d-flex flex-column gap-md-3 gap-2">
-                      <p class="mb-0 fw-bold fs_xl text_rangoon_green lh_150">
-                        Price
-                      </p>
-                      <p
-                        class="mb-0 fw-normal fs_sm text_rangoon_green lh_166 opacity_70"
-                      >
-                        Features / Plans
-                      </p>
-                    </div>
-                    <div class="py-md-4 py-2 h_80 h_md_50">
-                      <p class="mb-0 fw_600 fs_md text_rangoon_green lh_160">
-                        Private Strategies you can create 
-                      </p>
-                    </div>
-                    <div class="py-md-4 py-2 h_80 h_md_50">
-                      <p class="mb-0 fw_600 fs_md text_rangoon_green lh_160">
-                        Public Strategies you can create 
-                      </p>
-                    </div>
-                    <div class="py-md-4 py-2 h_80 h_md_50">
-                      <p class="mb-0 fw_600 fs_md text_rangoon_green lh_160">
-                        Algo strategies you can deploy  
-                      </p>
-                    </div>
-                    <div class="py-md-4 py-2 h_80 h_md_50">
-                      <p class="mb-0 fw_600 fs_md text_rangoon_green lh_160">
-                        Stockbag you can deploy 
-                      </p>
-                    </div>
-                    <div class="py-md-4 py-2 h_80 h_md_50">
-                      <p class="mb-0 fw_600 fs_md text_rangoon_green lh_160">
-                        Paper Trading Executions
-                      </p>
-                    </div>
-                    <div class="py-md-4 py-2 h_80 h_md_50">
-                      <p class="mb-0 fw_600 fs_md text_rangoon_green lh_160">
-                        Live-Auto Executions 
-                      </p>
-                    </div>
-                    <div
-                      class="py-md-4 py-2 d-flex gap-2 align-items-center h_80 h_md_50"
-                    >
-                      <p class="mb-0 fw_600 fs_md text_rangoon_green lh_160">
-                        Trade execution notifications 
-                      </p>
-                      <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM10.9999 16.75C10.9999 16.1977 11.4476 15.75 11.9999 15.75C12.5522 15.75 12.9999 16.1977 12.9999 16.75C12.9999 17.3023 12.5522 17.75 11.9999 17.75C11.4476 17.75 10.9999 17.3023 10.9999 16.75ZM14.9441 11.6317C14.4935 12.34 13.8036 12.8628 12.9999 13.105V13.75C12.9999 14.3023 12.5522 14.75 11.9999 14.75C11.4476 14.75 10.9999 14.3023 10.9999 13.75V12.25C10.9999 11.9848 11.1053 11.7304 11.2928 11.5429C11.4803 11.3554 11.7347 11.25 11.9999 11.25C12.284 11.25 12.5622 11.1693 12.8022 11.0173C13.0422 10.8654 13.2342 10.6484 13.3557 10.3916C13.4772 10.1348 13.5233 9.8488 13.4886 9.56684C13.4539 9.28489 13.3398 9.01858 13.1597 8.79891C12.9796 8.57924 12.7408 8.41523 12.4711 8.32597C12.2014 8.23671 11.9119 8.22587 11.6363 8.29471C11.3607 8.36354 11.1103 8.50923 10.9143 8.71482C10.5916 9.05313 10.1572 9.38155 9.69882 9.28973L9.54753 9.25943C9.00596 9.15095 8.64313 8.61256 8.89989 8.12353C9.11655 7.71089 9.415 7.34264 9.78069 7.04299C10.4066 6.53015 11.1907 6.24994 11.9999 6.25C12.8393 6.25254 13.6498 6.55647 14.2839 7.10646C14.918 7.65644 15.3335 8.41588 15.4546 9.24647C15.5758 10.0771 15.3946 10.9235 14.9441 11.6317Z"
-                          fill="#A1A1AA"
-                        />
-                      </svg>
-                    </div>
-                    <div class="py-md-4 py-2 h_80 h_md_50">
-                      <p class="mb-0 fw_600 fs_md text_rangoon_green lh_160">
-                        API to connect from other platforms 
-                      </p>
-                    </div>
+        </div>
+        <div class="mt-4 pt-3 d-lg-block d-none overflow_2xl_scroll px-3">
+          <div class="row flex_nowrap position-relative">
+            <div class="table_primary_col_width p_0">
+              <div class="py-4 d-flex flex-column gap-3">
+                <p class="mb-0 fw-bold fs_xl text_rangoon_green lh_150">
+                  Price
+                </p>
+                <p class="mb-0 fw-normal fs_sm text_rangoon_green lh_166 opacity_70">
+                  Features / Plans
+                </p>
+              </div>
+              <div class="py-4 h_80">
+                <p class="mb-0 fw_600 fs_md text_rangoon_green lh_160">
+                  Private Strategies you can create 
+                </p>
+              </div>
+              <div class="py-4 h_80">
+                <p class="mb-0 fw_600 fs_md text_rangoon_green lh_160">
+                  Public Strategies you can create 
+                </p>
+              </div>
+              <div class="py-4 h_80">
+                <p class="mb-0 fw_600 fs_md text_rangoon_green lh_160">
+                  Algo strategies you can deploy  
+                </p>
+              </div>
+              <div class="py-4 h_80">
+                <p class="mb-0 fw_600 fs_md text_rangoon_green lh_160">
+                  Stockbag you can deploy 
+                </p>
+              </div>
+              <div class="py-4 h_80">
+                <p class="mb-0 fw_600 fs_md text_rangoon_green lh_160">
+                  Paper Trading Executions
+                </p>
+              </div>
+              <div class="py-4 h_80">
+                <p class="mb-0 fw_600 fs_md text_rangoon_green lh_160">
+                  Live-Auto Executions 
+                </p>
+              </div>
+              <div class="py-4 d-flex gap-2 align-items-center h_80">
+                <p class="mb-0 fw_600 fs_md text_rangoon_green lh_160">
+                  Trade execution notifications 
+                </p>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM10.9999 16.75C10.9999 16.1977 11.4476 15.75 11.9999 15.75C12.5522 15.75 12.9999 16.1977 12.9999 16.75C12.9999 17.3023 12.5522 17.75 11.9999 17.75C11.4476 17.75 10.9999 17.3023 10.9999 16.75ZM14.9441 11.6317C14.4935 12.34 13.8036 12.8628 12.9999 13.105V13.75C12.9999 14.3023 12.5522 14.75 11.9999 14.75C11.4476 14.75 10.9999 14.3023 10.9999 13.75V12.25C10.9999 11.9848 11.1053 11.7304 11.2928 11.5429C11.4803 11.3554 11.7347 11.25 11.9999 11.25C12.284 11.25 12.5622 11.1693 12.8022 11.0173C13.0422 10.8654 13.2342 10.6484 13.3557 10.3916C13.4772 10.1348 13.5233 9.8488 13.4886 9.56684C13.4539 9.28489 13.3398 9.01858 13.1597 8.79891C12.9796 8.57924 12.7408 8.41523 12.4711 8.32597C12.2014 8.23671 11.9119 8.22587 11.6363 8.29471C11.3607 8.36354 11.1103 8.50923 10.9143 8.71482C10.5916 9.05313 10.1572 9.38155 9.69882 9.28973L9.54753 9.25943C9.00596 9.15095 8.64313 8.61256 8.89989 8.12353C9.11655 7.71089 9.415 7.34264 9.78069 7.04299C10.4066 6.53015 11.1907 6.24994 11.9999 6.25C12.8393 6.25254 13.6498 6.55647 14.2839 7.10646C14.918 7.65644 15.3335 8.41588 15.4546 9.24647C15.5758 10.0771 15.3946 10.9235 14.9441 11.6317Z"
+                    fill="#A1A1AA" />
+                </svg>
+              </div>
+              <div class="py-4 h_80">
+                <p class="mb-0 fw_600 fs_md text_rangoon_green lh_160">
+                  API to connect from other platforms 
+                </p>
+              </div>
+            </div>
+            <div class="table_secondary_col_width p_0 table_column_hover br_8 transition_03">
+              <div class="pt-3 pb-4 px-3 d-flex flex-column gap-3">
+                <p class="mb-0 fw_600 fs_md lh_160 text_santa_grey text_blue_lotus_text_hover transition_03">
+                  Free
+                </p>
+                <p class="mb-0 fw-bold fs_2xl lh_144 text_rangoon_green">
+                  ₹0
+                </p>
+              </div>
+              <div class="py-4 px-3 h_80 d-flex align-items-center">
+                <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
+                  10
+                </p>
+              </div>
+              <div class="py-4 px-3 h_80 d-flex align-items-center">
+                <img src="./assets/images/svg/red-cross.svg" alt="red-cross-icon" />
+              </div>
+              <div class="py-4 px-3 h_80 d-flex align-items-center">
+                <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
+                  1
+                </p>
+              </div>
+              <div class="py-4 px-3 h_80 d-flex align-items-center">
+                <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
+                  1
+                </p>
+              </div>
+              <div class="py-4 px-3 h_80 d-flex align-items-center">
+                <img src="./assets/images/svg/green-right.svg" alt="green-right-icon" />
+              </div>
+              <div class="py-4 px-3 h_80 d-flex align-items-center">
+                <img src="./assets/images/svg/red-cross.svg" alt="red-cross-icon" />
+              </div>
+              <div class="py-4 px-3 h_80 d-flex align-items-center">
+                <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
+                  Email/Call Access Support
+                </p>
+              </div>
+              <div class="py-4 px-3 h_80 d-flex align-items-center">
+                <img src="./assets/images/svg/green-right.svg" alt="green-right-icon" />
+              </div>
+              <div class="py-3 px-2">
+                <button
+                  class="table_button d-flex justify-content-center align-items-center fw_600 transition_03 fs_xs lh_200">
+                  Try for Free
+                </button>
+              </div>
+            </div>
+            <div class="table_secondary_col_width p_0 table_column_hover br_8 transition_03">
+              <div class="pt-3 pb-4 px-3 d-flex flex-column gap-3">
+                <p class="mb-0 fw_600 fs_md lh_160 text_santa_grey text_blue_lotus_text_hover transition_03">
+                  Basic
+                </p>
+                <p class="mb-0 fw-bold fs_2xl lh_144 text_rangoon_green opacity_100">
+                  ₹<span class="fw-bold fs_2xl lh_144 text_rangoon_green opacity_100" id="starter">250</span>
+                  <span class="fw-normal fs_sm lh_160 opacity_50">/mo</span>
+                </p>
+              </div>
+              <div class="py-4 px-3 h_80 d-flex align-items-center">
+                <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
+                  2
+                </p>
+              </div>
+              <div class="py_10 px-3 h_80 d-flex align-items-center">
+                <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
+                  Unlimited
+                  <span class="d-inline-block">0 on marketplace</span>
+                </p>
+              </div>
+              <div class="py-4 px-3 h_80 d-flex align-items-center">
+                <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
+                  1
+                </p>
+              </div>
+              <div class="py-4 px-3 h_80 d-flex align-items-center">
+                <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
+                  1
+                </p>
+              </div>
+              <div class="py-4 px-3 h_80 d-flex align-items-center">
+                <img src="./assets/images/svg/green-right.svg" alt="green-right-icon" />
+              </div>
+              <div class="py-4 px-3 h_80 d-flex align-items-center">
+                <img src="./assets/images/svg/green-right.svg" alt="green-right-icon" />
+              </div>
+              <div class="py_10 px-3 h_80 d-flex align-items-center">
+                <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
+                  Email/Call Access Support
+                </p>
+              </div>
+              <div class="py-4 px-3 h_80 d-flex align-items-center">
+                <img src="./assets/images/svg/green-right.svg" alt="green-right-icon" />
+              </div>
+              <div class="py-3 px-2">
+                <button
+                  class="table_button d-flex justify-content-center align-items-center fw_600 transition_03 fs_xs lh_200">
+                  Choose Plan
+                </button>
+              </div>
+            </div>
+            <div class="table_secondary_col_width p_0 table_column_hover br_8 transition_03">
+              <div class="pt-3 pb-4 px-3 d-flex flex-column gap-3">
+                <p class="mb-0 fw_600 fs_md lh_160 text_santa_grey text_blue_lotus_text_hover transition_03">
+                  Pro
+                </p>
+                <p class="mb-0 fw-bold fs_2xl lh_144 text_rangoon_green opacity_100">
+                  ₹<span class="fw-bold fs_2xl lh_144 text_rangoon_green opacity_100" id="retail">750</span>
+                  <span class="fw-normal fs_sm lh_160 opacity_50">/mo</span>
+                </p>
+              </div>
+              <div class="py-4 px-3 h_80 d-flex align-items-center">
+                <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
+                  10
+                </p>
+              </div>
+              <div class="py_10 px-3 h_80 d-flex align-items-center">
+                <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
+                  Unlimited
+                  <span class="d-inline-block">0 on marketplace</span>
+                </p>
+              </div>
+              <div class="py-4 px-3 h_80 d-flex align-items-center">
+                <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
+                  1
+                </p>
+              </div>
+              <div class="py-4 px-3 h_80 d-flex align-items-center">
+                <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
+                  1
+                </p>
+              </div>
+              <div class="py-4 px-3 h_80 d-flex align-items-center">
+                <img src="./assets/images/svg/green-right.svg" alt="green-right-icon" />
+              </div>
+              <div class="py-4 px-3 h_80 d-flex align-items-center">
+                <img src="./assets/images/svg/green-right.svg" alt="green-right-icon" />
+              </div>
+              <div class="py_10 px-3 h_80 d-flex align-items-center">
+                <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
+                  Email/Call Access Support
+                </p>
+              </div>
+              <div class="py-4 px-3 h_80 d-flex align-items-center">
+                <img src="./assets/images/svg/green-right.svg" alt="green-right-icon" />
+              </div>
+              <div class="py-3 px-2">
+                <button
+                  class="table_button d-flex justify-content-center align-items-center transition_03 fw_600 fs_xs lh_200">
+                  Choose Plan
+                </button>
+              </div>
+            </div>
+            <div class="table_last_col_width table_column_hover p_0 br_8 transition_03">
+              <div class="pt-3 pb-4 px-3 d-flex flex-column gap-3">
+                <p class="mb-0 fw_600 fs_md lh_160 text_santa_grey text_blue_lotus_text_hover transition_03">
+                  Advanced
+                </p>
+                <p class="mb-0 fw-bold fs_2xl lh_144 text_rangoon_green opacity_100">
+                  ₹<span class="fw-bold fs_2xl lh_144 text_rangoon_green opacity_100" id="best-price">1500</span>
+                  <span class="fw-normal fs_sm lh_160 opacity_50">/mo</span>
+                </p>
+              </div>
+              <div class="py-4 px-3 h_80 d-flex align-items-center">
+                <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
+                  25
+                </p>
+              </div>
+              <div class="py_10 px-3 h_80 d-flex align-items-center">
+                <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
+                  Unlimited
+                  <span class="d-inline-block">0 on marketplace</span>
+                </p>
+              </div>
+              <div class="py-4 px-3 h_80 d-flex align-items-center">
+                <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
+                  1
+                </p>
+              </div>
+              <div class="py-4 px-3 h_80 d-flex align-items-center">
+                <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
+                  1
+                </p>
+              </div>
+              <div class="py-4 px-3 h_80 d-flex align-items-center">
+                <img src="./assets/images/svg/green-right.svg" alt="green-right-icon" />
+              </div>
+              <div class="py-4 px-3 h_80 d-flex align-items-center">
+                <img src="./assets/images/svg/green-right.svg" alt="green-right-icon" />
+              </div>
+              <div class="py_10 px-3 h_80 d-flex align-items-center">
+                <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
+                  Email/Call Access Support
+                </p>
+              </div>
+              <div class="py-4 px-3 h_80 d-flex align-items-center">
+                <img src="./assets/images/svg/green-right.svg" alt="green-right-icon" />
+              </div>
+              <div class="py-3 px-2">
+                <button
+                  class="table_button d-flex justify-content-center align-items-center transition_03 fw_600 fs_xs lh_200">
+                  Choose Plan
+                </button>
+              </div>
+            </div>
+            <div class="border_line border_line_price_bottom_position"></div>
+            <div class="border_line border_line_private_strategies_position"></div>
+            <div class="border_line border_line_public_strategies_position"></div>
+            <div class="border_line border_line_aglo_strategies_position"></div>
+            <div class="border_line border_line_stockbag_position"></div>
+            <div class="border_line border_line_paper_trending_position"></div>
+            <div class="border_line border_line_live_auto_position"></div>
+            <div class="border_line border_line_trade_position"></div>
+            <div class="border_line border_line_api_position"></div>
+          </div>
+        </div>
+        <div class="mt-4 pt-3 d-lg-none d-block px-sm-3">
+          <div class="swiper position-relative pb-5">
+            <div class="swiper-scrollbar"></div>
+            <div class="swiper-wrapper pb-5">
+              <div class="swiper-slide first_slide">
+                <div class="table_primary_col_width p_0">
+                  <div class="py-md-4 py-2 d-flex flex-column gap-md-3 gap-2">
+                    <p class="mb-0 fw-bold fs_xl text_rangoon_green lh_150">
+                      Price
+                    </p>
+                    <p class="mb-0 fw-normal fs_sm text_rangoon_green lh_166 opacity_70">
+                      Features / Plans
+                    </p>
                   </div>
-                </div>
-                <div class="swiper-slide">
-                  <div
-                    class="table_secondary_col_width p_0 table_column_hover br_8 transition_03"
-                  >
-                    <div
-                      class="pt-md-3 pb-md-4 py-2 px-3 d-flex flex-column gap-md-3 gap-2 border_bottom_md"
-                    >
-                      <p
-                        class="mb-0 fw_600 fs_md lh_160 text_santa_grey text_blue_lotus_text_hover transition_03"
-                      >
-                        Free
-                      </p>
-                      <p class="mb-0 fw-bold fs_2xl lh_144 text_rangoon_green">
-                        ₹0
-                      </p>
-                    </div>
-                    <div
-                      class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md"
-                    >
-                      <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
-                        10
-                      </p>
-                    </div>
-                    <div
-                      class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md"
-                    >
-                      <img
-                        src="./assets/images/svg/red-cross.svg"
-                        alt="red-cross-icon"
-                      />
-                    </div>
-                    <div
-                      class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md"
-                    >
-                      <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
-                        1
-                      </p>
-                    </div>
-                    <div
-                      class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md"
-                    >
-                      <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
-                        1
-                      </p>
-                    </div>
-                    <div
-                      class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md"
-                    >
-                      <img
-                        src="./assets/images/svg/green-right.svg"
-                        alt="green-right-icon"
-                      />
-                    </div>
-                    <div
-                      class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md"
-                    >
-                      <img
-                        src="./assets/images/svg/red-cross.svg"
-                        alt="red-cross-icon"
-                      />
-                    </div>
-                    <div
-                      class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md"
-                    >
-                      <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
-                        Email/Call Access Support
-                      </p>
-                    </div>
-                    <div
-                      class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md"
-                    >
-                      <img
-                        src="./assets/images/svg/green-right.svg"
-                        alt="green-right-icon"
-                      />
-                    </div>
-                    <div class="py-3 px-2">
-                      <button
-                        class="table_button d-flex justify-content-center align-items-center transition_03 fw_600 fs_xs lh_200"
-                      >
-                        Try for Free
-                      </button>
-                    </div>
+                  <div class="py-md-4 py-2 h_80 h_md_50">
+                    <p class="mb-0 fw_600 fs_md text_rangoon_green lh_160">
+                      Private Strategies you can create 
+                    </p>
                   </div>
-                </div>
-                <div class="swiper-slide">
-                  <div
-                    class="table_secondary_col_width p_0 table_column_hover br_8 transition_03"
-                  >
-                    <div
-                      class="pt-md-3 pb-md-4 py-2 px-3 d-flex flex-column gap-md-3 gap-2 border_bottom_md"
-                    >
-                      <p
-                        class="mb-0 fw_600 fs_md lh_160 text_santa_grey text_blue_lotus_text_hover transition_03"
-                      >
-                        Basic
-                      </p>
-                      <p
-                        class="mb-0 fw-bold fs_2xl lh_144 text_rangoon_green opacity_100"
-                      >
-                        ₹<span
-                          class="fw-bold fs_2xl lh_144 text_rangoon_green opacity_100"
-                          id="starter-mobile"
-                          >250</span
-                        >
-                        <span class="fw-normal fs_sm lh_160 opacity_50"
-                          >/mo</span
-                        >
-                      </p>
-                    </div>
-                    <div
-                      class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md"
-                    >
-                      <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
-                        2
-                      </p>
-                    </div>
-                    <div
-                      class="py_10 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md"
-                    >
-                      <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
-                        Unlimited
-                        <span class="d-inline-block">0 on marketplace</span>
-                      </p>
-                    </div>
-                    <div
-                      class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md"
-                    >
-                      <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
-                        1
-                      </p>
-                    </div>
-                    <div
-                      class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md"
-                    >
-                      <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
-                        1
-                      </p>
-                    </div>
-                    <div
-                      class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md"
-                    >
-                      <img
-                        src="./assets/images/svg/green-right.svg"
-                        alt="green-right-icon"
-                      />
-                    </div>
-                    <div
-                      class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md"
-                    >
-                      <img
-                        src="./assets/images/svg/green-right.svg"
-                        alt="green-right-icon"
-                      />
-                    </div>
-                    <div
-                      class="py_10 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md"
-                    >
-                      <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
-                        Email/Call Access Support
-                      </p>
-                    </div>
-                    <div
-                      class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md"
-                    >
-                      <img
-                        src="./assets/images/svg/green-right.svg"
-                        alt="green-right-icon"
-                      />
-                    </div>
-                    <div class="py-3 px-2">
-                      <button
-                        class="table_button d-flex justify-content-center align-items-center transition_03 fw_600 fs_xs lh_200"
-                      >
-                        Choose Plan
-                      </button>
-                    </div>
+                  <div class="py-md-4 py-2 h_80 h_md_50">
+                    <p class="mb-0 fw_600 fs_md text_rangoon_green lh_160">
+                      Public Strategies you can create 
+                    </p>
                   </div>
-                </div>
-                <div class="swiper-slide">
-                  <div
-                    class="table_secondary_col_width p_0 table_column_hover br_8 transition_03"
-                  >
-                    <div
-                      class="pt-md-3 pb-md-4 py-2 px-3 d-flex flex-column gap-md-3 gap-2 border_bottom_md"
-                    >
-                      <p
-                        class="mb-0 fw_600 fs_md lh_160 text_santa_grey text_blue_lotus_text_hover transition_03"
-                      >
-                        Pro
-                      </p>
-                      <p
-                        class="mb-0 fw-bold fs_2xl lh_144 text_rangoon_green opacity_100"
-                      >
-                        ₹<span
-                          class="fw-bold fs_2xl lh_144 text_rangoon_green opacity_100"
-                          id="retail-mobile"
-                          >750</span
-                        >
-                        <span class="fw-normal fs_sm lh_160 opacity_50"
-                          >/mo</span
-                        >
-                      </p>
-                    </div>
-                    <div
-                      class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md"
-                    >
-                      <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
-                        10
-                      </p>
-                    </div>
-                    <div
-                      class="py_10 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md"
-                    >
-                      <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
-                        Unlimited
-                        <span class="d-inline-block">0 on marketplace</span>
-                      </p>
-                    </div>
-                    <div
-                      class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md"
-                    >
-                      <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
-                        10
-                      </p>
-                    </div>
-                    <div
-                      class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md"
-                    >
-                      <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
-                        1
-                      </p>
-                    </div>
-                    <div
-                      class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md"
-                    >
-                      <img
-                        src="./assets/images/svg/green-right.svg"
-                        alt="green-right-icon"
-                      />
-                    </div>
-                    <div
-                      class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md"
-                    >
-                      <img
-                        src="./assets/images/svg/green-right.svg"
-                        alt="green-right-icon"
-                      />
-                    </div>
-                    <div
-                      class="py_10 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md"
-                    >
-                      <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
-                        Email/Call Access Support
-                      </p>
-                    </div>
-                    <div
-                      class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md"
-                    >
-                      <img
-                        src="./assets/images/svg/green-right.svg"
-                        alt="green-right-icon"
-                      />
-                    </div>
-                    <div class="py-3 px-2">
-                      <button
-                        class="table_button d-flex justify-content-center align-items-center transition_03 fw_600 fs_xs lh_200"
-                      >
-                        Choose Plan
-                      </button>
-                    </div>
+                  <div class="py-md-4 py-2 h_80 h_md_50">
+                    <p class="mb-0 fw_600 fs_md text_rangoon_green lh_160">
+                      Algo strategies you can deploy  
+                    </p>
                   </div>
-                </div>
-                <div class="swiper-slide">
-                  <div
-                    class="table_last_col_width table_column_hover p_0 br_8 transition_03"
-                  >
-                    <div
-                      class="pt-md-3 pb-md-4 py-2 px-3 d-flex flex-column gap-md-3 gap-2 border_bottom_md"
-                    >
-                      <p
-                        class="mb-0 fw_600 fs_md lh_160 text_santa_grey text_blue_lotus_text_hover transition_03"
-                      >
-                        Advanced
-                      </p>
-                      <p
-                        class="mb-0 fw-bold fs_2xl lh_144 text_rangoon_green opacity_100"
-                      >
-                        ₹<span
-                          class="fw-bold fs_2xl lh_144 text_rangoon_green opacity_100"
-                          id="best-price-mobile"
-                          >1500</span
-                        >
-                        <span class="fw-normal fs_sm lh_160 opacity_50"
-                          >/mo</span
-                        >
-                      </p>
-                    </div>
-                    <div
-                      class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md"
-                    >
-                      <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
-                        25
-                      </p>
-                    </div>
-                    <div
-                      class="py_10 px-3 h_80 h_md_50 d-flex align-items-center"
-                    >
-                      <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
-                        Unlimited
-                        <span class="d-inline-block">0 on marketplace</span>
-                      </p>
-                    </div>
-                    <div
-                      class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md"
-                    >
-                      <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
-                        1
-                      </p>
-                    </div>
-                    <div
-                      class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md"
-                    >
-                      <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
-                        1
-                      </p>
-                    </div>
-                    <div
-                      class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md"
-                    >
-                      <img
-                        src="./assets/images/svg/green-right.svg"
-                        alt="green-right-icon"
-                      />
-                    </div>
-                    <div
-                      class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md"
-                    >
-                      <img
-                        src="./assets/images/svg/green-right.svg"
-                        alt="green-right-icon"
-                      />
-                    </div>
-                    <div
-                      class="py_10 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md"
-                    >
-                      <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
-                        Email/Call Access Support
-                      </p>
-                    </div>
-                    <div
-                      class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md"
-                    >
-                      <img
-                        src="./assets/images/svg/green-right.svg"
-                        alt="green-right-icon"
-                      />
-                    </div>
-                    <div class="py-3 px-2">
-                      <button
-                        class="table_button d-flex justify-content-center align-items-center transition_03 fw_600 fs_xs lh_200"
-                      >
-                        Choose Plan
-                      </button>
-                    </div>
+                  <div class="py-md-4 py-2 h_80 h_md_50">
+                    <p class="mb-0 fw_600 fs_md text_rangoon_green lh_160">
+                      Stockbag you can deploy 
+                    </p>
+                  </div>
+                  <div class="py-md-4 py-2 h_80 h_md_50">
+                    <p class="mb-0 fw_600 fs_md text_rangoon_green lh_160">
+                      Paper Trading Executions
+                    </p>
+                  </div>
+                  <div class="py-md-4 py-2 h_80 h_md_50">
+                    <p class="mb-0 fw_600 fs_md text_rangoon_green lh_160">
+                      Live-Auto Executions 
+                    </p>
+                  </div>
+                  <div class="py-md-4 py-2 d-flex gap-2 align-items-center h_80 h_md_50">
+                    <p class="mb-0 fw_600 fs_md text_rangoon_green lh_160">
+                      Trade execution notifications 
+                    </p>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM10.9999 16.75C10.9999 16.1977 11.4476 15.75 11.9999 15.75C12.5522 15.75 12.9999 16.1977 12.9999 16.75C12.9999 17.3023 12.5522 17.75 11.9999 17.75C11.4476 17.75 10.9999 17.3023 10.9999 16.75ZM14.9441 11.6317C14.4935 12.34 13.8036 12.8628 12.9999 13.105V13.75C12.9999 14.3023 12.5522 14.75 11.9999 14.75C11.4476 14.75 10.9999 14.3023 10.9999 13.75V12.25C10.9999 11.9848 11.1053 11.7304 11.2928 11.5429C11.4803 11.3554 11.7347 11.25 11.9999 11.25C12.284 11.25 12.5622 11.1693 12.8022 11.0173C13.0422 10.8654 13.2342 10.6484 13.3557 10.3916C13.4772 10.1348 13.5233 9.8488 13.4886 9.56684C13.4539 9.28489 13.3398 9.01858 13.1597 8.79891C12.9796 8.57924 12.7408 8.41523 12.4711 8.32597C12.2014 8.23671 11.9119 8.22587 11.6363 8.29471C11.3607 8.36354 11.1103 8.50923 10.9143 8.71482C10.5916 9.05313 10.1572 9.38155 9.69882 9.28973L9.54753 9.25943C9.00596 9.15095 8.64313 8.61256 8.89989 8.12353C9.11655 7.71089 9.415 7.34264 9.78069 7.04299C10.4066 6.53015 11.1907 6.24994 11.9999 6.25C12.8393 6.25254 13.6498 6.55647 14.2839 7.10646C14.918 7.65644 15.3335 8.41588 15.4546 9.24647C15.5758 10.0771 15.3946 10.9235 14.9441 11.6317Z"
+                        fill="#A1A1AA" />
+                    </svg>
+                  </div>
+                  <div class="py-md-4 py-2 h_80 h_md_50">
+                    <p class="mb-0 fw_600 fs_md text_rangoon_green lh_160">
+                      API to connect from other platforms 
+                    </p>
                   </div>
                 </div>
               </div>
-              <div class="swiper-pagination"></div>
+              <div class="swiper-slide">
+                <div class="table_secondary_col_width p_0 table_column_hover br_8 transition_03">
+                  <div class="pt-md-3 pb-md-4 py-2 px-3 d-flex flex-column gap-md-3 gap-2 border_bottom_md">
+                    <p class="mb-0 fw_600 fs_md lh_160 text_santa_grey text_blue_lotus_text_hover transition_03">
+                      Free
+                    </p>
+                    <p class="mb-0 fw-bold fs_2xl lh_144 text_rangoon_green">
+                      ₹0
+                    </p>
+                  </div>
+                  <div class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md">
+                    <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
+                      10
+                    </p>
+                  </div>
+                  <div class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md">
+                    <img src="./assets/images/svg/red-cross.svg" alt="red-cross-icon" />
+                  </div>
+                  <div class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md">
+                    <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
+                      1
+                    </p>
+                  </div>
+                  <div class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md">
+                    <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
+                      1
+                    </p>
+                  </div>
+                  <div class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md">
+                    <img src="./assets/images/svg/green-right.svg" alt="green-right-icon" />
+                  </div>
+                  <div class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md">
+                    <img src="./assets/images/svg/red-cross.svg" alt="red-cross-icon" />
+                  </div>
+                  <div class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md">
+                    <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
+                      Email/Call Access Support
+                    </p>
+                  </div>
+                  <div class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md">
+                    <img src="./assets/images/svg/green-right.svg" alt="green-right-icon" />
+                  </div>
+                  <div class="py-3 px-2">
+                    <button
+                      class="table_button d-flex justify-content-center align-items-center transition_03 fw_600 fs_xs lh_200">
+                      Try for Free
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="table_secondary_col_width p_0 table_column_hover br_8 transition_03">
+                  <div class="pt-md-3 pb-md-4 py-2 px-3 d-flex flex-column gap-md-3 gap-2 border_bottom_md">
+                    <p class="mb-0 fw_600 fs_md lh_160 text_santa_grey text_blue_lotus_text_hover transition_03">
+                      Basic
+                    </p>
+                    <p class="mb-0 fw-bold fs_2xl lh_144 text_rangoon_green opacity_100">
+                      ₹<span class="fw-bold fs_2xl lh_144 text_rangoon_green opacity_100" id="starter-mobile">250</span>
+                      <span class="fw-normal fs_sm lh_160 opacity_50">/mo</span>
+                    </p>
+                  </div>
+                  <div class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md">
+                    <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
+                      2
+                    </p>
+                  </div>
+                  <div class="py_10 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md">
+                    <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
+                      Unlimited
+                      <span class="d-inline-block">0 on marketplace</span>
+                    </p>
+                  </div>
+                  <div class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md">
+                    <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
+                      1
+                    </p>
+                  </div>
+                  <div class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md">
+                    <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
+                      1
+                    </p>
+                  </div>
+                  <div class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md">
+                    <img src="./assets/images/svg/green-right.svg" alt="green-right-icon" />
+                  </div>
+                  <div class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md">
+                    <img src="./assets/images/svg/green-right.svg" alt="green-right-icon" />
+                  </div>
+                  <div class="py_10 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md">
+                    <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
+                      Email/Call Access Support
+                    </p>
+                  </div>
+                  <div class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md">
+                    <img src="./assets/images/svg/green-right.svg" alt="green-right-icon" />
+                  </div>
+                  <div class="py-3 px-2">
+                    <button
+                      class="table_button d-flex justify-content-center align-items-center transition_03 fw_600 fs_xs lh_200">
+                      Choose Plan
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="table_secondary_col_width p_0 table_column_hover br_8 transition_03">
+                  <div class="pt-md-3 pb-md-4 py-2 px-3 d-flex flex-column gap-md-3 gap-2 border_bottom_md">
+                    <p class="mb-0 fw_600 fs_md lh_160 text_santa_grey text_blue_lotus_text_hover transition_03">
+                      Pro
+                    </p>
+                    <p class="mb-0 fw-bold fs_2xl lh_144 text_rangoon_green opacity_100">
+                      ₹<span class="fw-bold fs_2xl lh_144 text_rangoon_green opacity_100" id="retail-mobile">750</span>
+                      <span class="fw-normal fs_sm lh_160 opacity_50">/mo</span>
+                    </p>
+                  </div>
+                  <div class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md">
+                    <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
+                      10
+                    </p>
+                  </div>
+                  <div class="py_10 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md">
+                    <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
+                      Unlimited
+                      <span class="d-inline-block">0 on marketplace</span>
+                    </p>
+                  </div>
+                  <div class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md">
+                    <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
+                      10
+                    </p>
+                  </div>
+                  <div class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md">
+                    <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
+                      1
+                    </p>
+                  </div>
+                  <div class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md">
+                    <img src="./assets/images/svg/green-right.svg" alt="green-right-icon" />
+                  </div>
+                  <div class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md">
+                    <img src="./assets/images/svg/green-right.svg" alt="green-right-icon" />
+                  </div>
+                  <div class="py_10 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md">
+                    <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
+                      Email/Call Access Support
+                    </p>
+                  </div>
+                  <div class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md">
+                    <img src="./assets/images/svg/green-right.svg" alt="green-right-icon" />
+                  </div>
+                  <div class="py-3 px-2">
+                    <button
+                      class="table_button d-flex justify-content-center align-items-center transition_03 fw_600 fs_xs lh_200">
+                      Choose Plan
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="table_last_col_width table_column_hover p_0 br_8 transition_03">
+                  <div class="pt-md-3 pb-md-4 py-2 px-3 d-flex flex-column gap-md-3 gap-2 border_bottom_md">
+                    <p class="mb-0 fw_600 fs_md lh_160 text_santa_grey text_blue_lotus_text_hover transition_03">
+                      Advanced
+                    </p>
+                    <p class="mb-0 fw-bold fs_2xl lh_144 text_rangoon_green opacity_100">
+                      ₹<span class="fw-bold fs_2xl lh_144 text_rangoon_green opacity_100"
+                        id="best-price-mobile">1500</span>
+                      <span class="fw-normal fs_sm lh_160 opacity_50">/mo</span>
+                    </p>
+                  </div>
+                  <div class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md">
+                    <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
+                      25
+                    </p>
+                  </div>
+                  <div class="py_10 px-3 h_80 h_md_50 d-flex align-items-center">
+                    <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
+                      Unlimited
+                      <span class="d-inline-block">0 on marketplace</span>
+                    </p>
+                  </div>
+                  <div class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md">
+                    <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
+                      1
+                    </p>
+                  </div>
+                  <div class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md">
+                    <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
+                      1
+                    </p>
+                  </div>
+                  <div class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md">
+                    <img src="./assets/images/svg/green-right.svg" alt="green-right-icon" />
+                  </div>
+                  <div class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md">
+                    <img src="./assets/images/svg/green-right.svg" alt="green-right-icon" />
+                  </div>
+                  <div class="py_10 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md">
+                    <p class="mb-0 fw-normal fs_sm lh_166 text_rangoon_green">
+                      Email/Call Access Support
+                    </p>
+                  </div>
+                  <div class="py-md-4 py-2 px-3 h_80 h_md_50 d-flex align-items-center border_bottom_md">
+                    <img src="./assets/images/svg/green-right.svg" alt="green-right-icon" />
+                  </div>
+                  <div class="py-3 px-2">
+                    <button
+                      class="table_button d-flex justify-content-center align-items-center transition_03 fw_600 fs_xs lh_200">
+                      Choose Plan
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
 
-              <div
-                class="border_line border_line_price_bottom_position d-md-block d-none"
-              ></div>
-              <div
-                class="border_line border_line_private_strategies_position d-md-block d-none"
-              ></div>
-              <div
-                class="border_line border_line_public_strategies_position d-md-block d-none"
-              ></div>
-              <div
-                class="border_line border_line_aglo_strategies_position d-md-block d-none"
-              ></div>
-              <div
-                class="border_line border_line_stockbag_position d-md-block d-none"
-              ></div>
-              <div
-                class="border_line border_line_paper_trending_position d-md-block d-none"
-              ></div>
-              <div
-                class="border_line border_line_live_auto_position d-md-block d-none"
-              ></div>
-              <div
-                class="border_line border_line_trade_position d-md-block d-none"
-              ></div>
-              <div
-                class="border_line border_line_api_position d-md-block d-none"
-              ></div>
-            </div>
+            <div class="border_line border_line_price_bottom_position d-md-block d-none"></div>
+            <div class="border_line border_line_private_strategies_position d-md-block d-none"></div>
+            <div class="border_line border_line_public_strategies_position d-md-block d-none"></div>
+            <div class="border_line border_line_aglo_strategies_position d-md-block d-none"></div>
+            <div class="border_line border_line_stockbag_position d-md-block d-none"></div>
+            <div class="border_line border_line_paper_trending_position d-md-block d-none"></div>
+            <div class="border_line border_line_live_auto_position d-md-block d-none"></div>
+            <div class="border_line border_line_trade_position d-md-block d-none"></div>
+            <div class="border_line border_line_api_position d-md-block d-none"></div>
           </div>
         </div>
       </div>
     </div>
-    <!------------------------ FAQ SECTION ------------------->
-    <section class="py-5" id="faq">
-      <div class="container custom_container">
-        <h2 class="sub_heading text-center">Frequently asked questions</h2>
-        <p class="sub_para text-center py-3">
-          Everything you need to know about the product and billing.
-        </p>
-        <div class="accordion mt_lg_40 mt-4" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button fs_md mb-0"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-              >
-                Steps required for broker order integration in live deployment?
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              class="accordion-collapse collapse show"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body ms-3">
-                <ul class="list-style-square ps-3 ms-2 max_w_850">
-                  <li class="mb-1 fs_sm secondary_text_light_black opacity-75">
-                    Login into KeepSL via your broker.
-                  </li>
-                  <li class="mb-1 fs_sm secondary_text_light_black opacity-75">
-                    Create a live deployment to place an order and verify it in
-                    your broker terminal.
-                  </li>
-                  <li class="mb-1 fs_sm secondary_text_light_black opacity-75">
-                    NOTE : You must log in daily to KeepSL via the same broker
-                    account for orders that need to be executed from KeepSL on
-                    that day.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item mt-3">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed fs_md mb-0"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-                How does live deployment work?
-              </button>
-            </h2>
-            <div
-              id="collapseTwo"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body ms-3">
-                <ul class="list-style-square ps-3 ms-2 max_w_850">
-                  <li class="mb-1 fs_sm secondary_text_light_black opacity-75">
-                    Login into KeepSL via your broker.
-                  </li>
-                  <li class="mb-1 fs_sm secondary_text_light_black opacity-75">
-                    Create a live deployment to place an order and verify it in
-                    your broker terminal.
-                  </li>
-                  <li class="mb-1 fs_sm secondary_text_light_black opacity-75">
-                    NOTE : You must log in daily to KeepSL via the same broker
-                    account for orders that need to be executed from KeepSL on
-                    that day.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          
-          <div class="accordion-item mt-3">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed fs_md mb-0"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
-              >
-                Can I manually close the positions taken by live deployment?
-              </button>
-            </h2>
-            <div
-              id="collapseThree"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body ms-3">
-                <ul class="list-style-square ps-3 ms-2 max_w_850">
-                  <li class="mb-1 fs_sm secondary_text_light_black opacity-75">
-                    Login into KeepSL via your broker.
-                  </li>
-                  <li class="mb-1 fs_sm secondary_text_light_black opacity-75">
-                    Create a live deployment to place an order and verify it in
-                    your broker terminal.
-                  </li>
-                  <li class="mb-1 fs_sm secondary_text_light_black opacity-75">
-                    NOTE : You must log in daily to KeepSL via the same broker
-                    account for orders that need to be executed from KeepSL on
-                    that day.
-                  </li>
-                </ul>
-              </div>
+  </div>
+  <!------------------------ FAQ SECTION ------------------->
+  <section class="py-5" id="faq">
+    <div class="container custom_container">
+      <h2 class="sub_heading text-center">Frequently asked questions</h2>
+      <p class="sub_para text-center py-3">
+        Everything you need to know about the product and billing.
+      </p>
+      <div class="accordion mt_lg_40 mt-4" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button fs_md mb-0" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Steps required for broker order integration in live deployment?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body ms-3">
+              <ul class="list-style-square ps-3 ms-2 max_w_850">
+                <li class="mb-1 fs_sm secondary_text_light_black opacity-75">
+                  Login into KeepSL via your broker.
+                </li>
+                <li class="mb-1 fs_sm secondary_text_light_black opacity-75">
+                  Create a live deployment to place an order and verify it in
+                  your broker terminal.
+                </li>
+                <li class="mb-1 fs_sm secondary_text_light_black opacity-75">
+                  NOTE : You must log in daily to KeepSL via the same broker
+                  account for orders that need to be executed from KeepSL on
+                  that day.
+                </li>
+              </ul>
             </div>
           </div>
         </div>
 
-        <button
-          class="fw-semibold fs_md mb-0 d-flex w-100 justify-content-between mt-3 show_more_btn"
-        >
+        <div class="accordion-item mt-3">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed fs_md mb-0" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              How does live deployment work?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body ms-3">
+              <ul class="list-style-square ps-3 ms-2 max_w_850">
+                <li class="mb-1 fs_sm secondary_text_light_black opacity-75">
+                  Login into KeepSL via your broker.
+                </li>
+                <li class="mb-1 fs_sm secondary_text_light_black opacity-75">
+                  Create a live deployment to place an order and verify it in
+                  your broker terminal.
+                </li>
+                <li class="mb-1 fs_sm secondary_text_light_black opacity-75">
+                  NOTE : You must log in daily to KeepSL via the same broker
+                  account for orders that need to be executed from KeepSL on
+                  that day.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item mt-3">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed fs_md mb-0" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Can I manually close the positions taken by live deployment?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body ms-3">
+              <ul class="list-style-square ps-3 ms-2 max_w_850">
+                <li class="mb-1 fs_sm secondary_text_light_black opacity-75">
+                  Login into KeepSL via your broker.
+                </li>
+                <li class="mb-1 fs_sm secondary_text_light_black opacity-75">
+                  Create a live deployment to place an order and verify it in
+                  your broker terminal.
+                </li>
+                <li class="mb-1 fs_sm secondary_text_light_black opacity-75">
+                  NOTE : You must log in daily to KeepSL via the same broker
+                  account for orders that need to be executed from KeepSL on
+                  that day.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="./faq-qus.html">
+        <button class="fw-semibold fs_md mb-0 d-flex w-100 justify-content-between mt-3 show_more_btn">
           <span> More questions </span>
-          <svg
-            width="24"
-            height="25"
-            viewBox="0 0 24 25"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+          <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M12 22.5342C17.5228 22.5342 22 18.057 22 12.5342C22 7.01133 17.5228 2.53418 12 2.53418C6.47715 2.53418 2 7.01133 2 12.5342C2 18.057 6.47715 22.5342 12 22.5342Z"
-              stroke="#5E72E4"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M12 16.5342L16 12.5342L12 8.53418"
-              stroke="#5E72E4"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M8 12.5342H16"
-              stroke="#5E72E4"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
+              stroke="#5E72E4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M12 16.5342L16 12.5342L12 8.53418" stroke="#5E72E4" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M8 12.5342H16" stroke="#5E72E4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </button>
-      </div>
-    </section>
+      </a>
+    </div>
+  </section>
 
-    <!---------------- FREE TRIAL ------------------>
-    <section class="px-3 my-5 pb-5">
-      <div
-        class="container custom_container free-trial-sec d-flex align-items-center justify-content-center flex-column py-sm-5 py-4 position-relative overflow-hidden custom_radius"
-      >
-        <div class="position-absolute top-0 start-0">
-          <img
-            class="left_img"
-            src="./assets/images/png/freetrialTopImg.png"
-            alt="vector of free trial section"
-          />
-        </div>
-        <h2 class="sub_heading py-3 text-white">30-Days Free Trial!</h2>
-        <button
-          class="btn-get-start btn-get-start-trial d-flex align-items-center justify-content-center fs_xs text-nowrap mb-4"
-        >
-          Get Started
-          <div
-            class="wh-btn-trial d-flex align-items-center justify-content-center"
-          >
-            <img
-              src="./assets/images/png/Group.png"
-              class="w-100 h-100"
-              alt="arrow png"
-            />
-          </div>
-        </button>
-      </div>
-    </section>
-    <!-- STAY UPDATED SECTION -->
-    <section class="py-5 my-4" id="about">
-      <div class="container">
-        <h2 class="sub_heading text-center pb-4 mb-sm-3">
-          Stay updated with KeepSL
-        </h2>
-        <div class="row justify-content-center max_950 mx-auto">
-          <div class="col-md-4 col-sm-6">
-            <a href="/" class="text_light_black">
-              <div
-                class="stay_card d-flex flex-column justify-content-between align-items-center"
-              >
-                <svg
-                  width="48"
-                  height="48"
-                  viewBox="0 0 48 48"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g clip-path="url(#clip0_2125_1247)">
-                    <path
-                      d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z"
-                      fill="url(#paint0_linear_2125_1247)"
-                    />
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M10.864 23.7469C17.8605 20.6986 22.5259 18.689 24.8603 17.7181C31.5254 14.9459 32.9103 14.4643 33.813 14.4484C34.0115 14.4449 34.4554 14.4941 34.743 14.7274C34.9858 14.9245 35.0526 15.1906 35.0846 15.3774C35.1165 15.5642 35.1563 15.9897 35.1247 16.3222C34.7635 20.1172 33.2007 29.3265 32.4056 33.5769C32.0692 35.3755 31.4067 35.9785 30.7654 36.0375C29.3717 36.1658 28.3134 35.1164 26.9635 34.2316C24.8512 32.8469 23.6578 31.985 21.6075 30.6338C19.2379 29.0723 20.774 28.2141 22.1244 26.8115C22.4778 26.4445 28.6186 20.8589 28.7374 20.3523C28.7523 20.2889 28.7661 20.0527 28.6258 19.9279C28.4854 19.8032 28.2783 19.8459 28.1289 19.8798C27.917 19.9279 24.5426 22.1582 18.0055 26.5709C17.0477 27.2286 16.1801 27.5491 15.4028 27.5323C14.5459 27.5138 12.8975 27.0478 11.6721 26.6495C10.1691 26.1609 8.97456 25.9026 9.07858 25.0729C9.13276 24.6407 9.72791 24.1987 10.864 23.7469Z"
-                      fill="white"
-                    />
-                  </g>
-                  <defs>
-                    <linearGradient
-                      id="paint0_linear_2125_1247"
-                      x1="24"
-                      y1="0"
-                      x2="24"
-                      y2="47.644"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stop-color="#2AABEE" />
-                      <stop offset="1" stop-color="#229ED9" />
-                    </linearGradient>
-                    <clipPath id="clip0_2125_1247">
-                      <rect width="48" height="48" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
-                <h4 class="fs_md fw_600 text-center pt-3 mb-0">
-                  Community <br />
-                  discussions
-                </h4>
-              </div></a
-            >
-          </div>
-          <div class="col-md-4 col-sm-6 mt-4 mt-sm-0">
-            <a href="/" class="text_light_black">
-              <div
-                class="stay_card d-flex flex-column justify-content-between align-items-center"
-              >
-                <svg
-                  class="my-1"
-                  width="50"
-                  height="34"
-                  viewBox="0 0 50 34"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g clip-path="url(#clip0_8001_304)">
-                    <path
-                      d="M48.8957 5.30306C48.6089 4.27806 48.0495 3.34361 47.2732 2.59274C46.4968 1.84188 45.5306 1.3008 44.4707 1.0234C40.5907 0 24.9746 0 24.9746 0C24.9746 0 9.35785 0.0309777 5.47777 1.05438C4.41791 1.3318 3.45168 1.8729 2.67532 2.6238C1.89895 3.3747 1.33953 4.30919 1.05277 5.33422C-0.120861 12.0016 -0.576134 22.1612 1.085 28.5619C1.37179 29.5869 1.93122 30.5213 2.70759 31.2722C3.48395 32.0231 4.45016 32.5641 5.51 32.8415C9.39008 33.8649 25.0065 33.8649 25.0065 33.8649C25.0065 33.8649 40.6227 33.8649 44.5026 32.8415C45.5625 32.5642 46.5287 32.0231 47.3051 31.2722C48.0815 30.5214 48.641 29.5869 48.9278 28.5619C50.1657 21.885 50.5471 11.7317 48.8957 5.30306Z"
-                      fill="#FF0000"
-                    />
-                    <path
-                      d="M20.0039 24.1892L32.9586 16.9325L20.0039 9.67578V24.1892Z"
-                      fill="white"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_8001_304">
-                      <rect width="50" height="34" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
-
-                <h4 class="fs_md fw_600 text-center pt-3 mb-0">
-                  Webinar recordings <br />
-                  tutorials
-                </h4>
-              </div></a
-            >
-          </div>
-          <div class="col-md-4 col-sm-6 mt-4 mt-md-0">
-            <a href="/" class="text_light_black">
-              <div
-                class="stay_card d-flex flex-column justify-content-between align-items-center"
-              >
-                <svg
-                  width="48"
-                  height="48"
-                  viewBox="0 0 48 48"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M15.095 43.5015C33.2083 43.5015 43.1155 28.4948 43.1155 15.481C43.1155 15.0548 43.1155 14.6305 43.0867 14.2081C45.0141 12.814 46.6778 11.0878 48 9.11048C46.2028 9.90728 44.2961 10.4296 42.3437 10.6599C44.3996 9.4293 45.9383 7.49349 46.6733 5.21288C44.7402 6.3601 42.6253 7.16853 40.4198 7.60328C38.935 6.02443 36.9712 4.97896 34.8324 4.62865C32.6935 4.27834 30.4988 4.64271 28.5879 5.66539C26.677 6.68806 25.1564 8.31203 24.2615 10.286C23.3665 12.2599 23.1471 14.4738 23.6371 16.585C19.7218 16.3886 15.8915 15.3711 12.3949 13.5985C8.89831 11.8259 5.81353 9.3378 3.3408 6.29576C2.08146 8.46375 1.69574 11.0302 2.2622 13.4726C2.82865 15.915 4.30468 18.0497 6.38976 19.442C4.82246 19.3961 3.2893 18.9733 1.92 18.2094V18.3342C1.92062 20.6079 2.7077 22.8114 4.14774 24.5709C5.58778 26.3304 7.59212 27.5377 9.8208 27.9879C8.37096 28.3834 6.84975 28.4412 5.37408 28.1569C6.00363 30.1135 7.22886 31.8246 8.87848 33.0508C10.5281 34.277 12.5197 34.957 14.5747 34.9959C12.5329 36.6009 10.1946 37.7875 7.69375 38.4879C5.19287 39.1883 2.57843 39.3888 0 39.0778C4.50367 41.9679 9.74385 43.5009 15.095 43.4938"
-                    fill="#1DA1F2"
-                  />
-                </svg>
-
-                <h4 class="fs_md fw_600 text-center pt-3 mb-0">
-                  Feature updates, <br />
-                  announcements
-                </h4>
-              </div></a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-    <!---------------- FOOTER SECTION----------------->
-    <footer class="footer-prop">
-      <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-md-4 mb-4 mb-sm-0">
-            <div class="footer-logo">
-              <a href="#"
-                ><img
-                  src="./assets/images/png/Keepsl_logo.png"
-                  class="w-100 h-100"
-                  alt="footer logo"
-              /></a>
-            </div>
-            <p
-              class="max-w-footer-txt fw-normal fs_xs text-white fs_xs mb-0 pt-3"
-            >
-              KeepSL technologies llp puttenahali(v) jp nagar, 7th phase
-              bengaluru, karnataka,india 560078
-            </p>
-            <div
-              class="d-flex align-items-start justify-content-start flex-column pt-3 pt-md-4"
-            >
-              <a
-                href="mailto:whatisthis@gmail.com"
-                class="fw-normal fs_3xs text-white"
-                >Email: support@keepSL.com</a
-              >
-              <a href="tel:123456789" class="fw-normal fs_3xs text-white"
-                >Tel. 9844858629</a
-              >
-            </div>
-          </div>
-          <div
-            class="col-md-3 col-6 d-flex flex-column align-items-start justify-content-start"
-          >
-            <p class="fs_xs text-white">Navigation</p>
-            <a
-              href="#about"
-              class="fs_3xs text-white opacity-75 fw-normal mb-2 footer-link"
-              >About Us
-            </a>
-            <a
-              href="#pricing"
-              class="fs_3xs text-white opacity-75 fw-normal mb-2 footer-link"
-            >
-              Features
-            </a>
-            <a
-              href="#pricing"
-              class="fs_3xs text-white opacity-75 fw-normal mb-2 footer-link"
-            >
-              Pricing
-            </a>
-            <a
-              href="https://app.keepsl.com/docs#/"
-              class="fs_3xs text-white opacity-75 fw-normal mb-2 footer-link"
-            >
-              Documentation
-            </a>
-          </div>
-          <div
-            class="col-md-3 col-6 d-flex flex-column align-items-start justify-content-start"
-          >
-            <p class="fs_xs text-white">Terms</p>
-            <a
-              href="./refund-policy.html"
-              class="fs_3xs text-white opacity-75 fw-normal mb-2 footer-link"
-              >Refund Policy
-            </a>
-            <a
-              href="./terms-and-condition.html"
-              class="fs_3xs text-white opacity-75 fw-normal mb-2 footer-link"
-            >
-              Terms and Conditions
-            </a>
-            <a
-              href="./privacy-policy.html"
-              class="fs_3xs text-white opacity-75 fw-normal mb-2 footer-link"
-            >
-              Privacy Policy
-            </a>
-          </div>
-        </div>
-        <div class="line d-sm-none d-block"></div>
-        <div
-          class="d-flex align-items-center justify-content-sm-between justify-content-center flex-sm-row flex-column pt-copyright flex-sm-nowrap flex-wrap"
-        >
-          <p class="fw-normal text-footer text-white opacity-65 mb-sm-0 mb-1">
-            © 2024 KeepSL. All rights reserved.
-          </p>
-          <div>
-            <a
-              href="https://www.keepsl.com/privacy-policy"
-              class="fw-normal text-footer text-white opacity-65 mb-0 footer-link"
-              >Privacy Policy
-            </a>
-            <span class="fw-normal text-footer text-white opacity-65">.</span>
-            <a
-              href="https://www.keepsl.com/terms-and-conditions"
-              class="fw-normal text-footer text-white opacity-65 mb-0 footer-link"
-            >
-              Terms & Condition
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- SCROLL TOP -->
-
+  <!---------------- FREE TRIAL ------------------>
+  <section class="px-3 my-5 pb-5">
     <div
-      class="scroll_top position-fixed shadow cursor z-50 d-flex align-items-center justify-content-center"
-    >
-      <div class="scroll_box d-flex align-items-center justify-content-center">
-        <img
-          src="./assets/images/svg/scroll_top_icon.svg"
-          alt="scroll to top icon"
-          class="w-100 h-100"
-        />
+      class="container custom_container free-trial-sec d-flex align-items-center justify-content-center flex-column py-sm-5 py-4 position-relative overflow-hidden custom_radius">
+      <div class="position-absolute top-0 start-0">
+        <img class="left_img" src="./assets/images/png/freetrialTopImg.png" alt="vector of free trial section" />
+      </div>
+      <h2 class="sub_heading py-3 text-white">30-Days Free Trial!</h2>
+      <button
+        class="btn-get-start btn-get-start-trial d-flex align-items-center justify-content-center fs_xs text-nowrap mb-4">
+        Get Started
+        <div class="wh-btn-trial d-flex align-items-center justify-content-center">
+          <img src="./assets/images/png/Group.png" class="w-100 h-100" alt="arrow png" />
+        </div>
+      </button>
+    </div>
+  </section>
+  <!-- STAY UPDATED SECTION -->
+  <section class="py-5 my-4" id="about">
+    <div class="container">
+      <h2 class="sub_heading text-center pb-4 mb-sm-3">
+        Stay updated with KeepSL
+      </h2>
+      <div class="row justify-content-center max_950 mx-auto">
+        <div class="col-md-4 col-sm-6">
+          <a href="/" class="text_light_black">
+            <div class="stay_card d-flex flex-column justify-content-between align-items-center">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_2125_1247)">
+                  <path
+                    d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z"
+                    fill="url(#paint0_linear_2125_1247)" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M10.864 23.7469C17.8605 20.6986 22.5259 18.689 24.8603 17.7181C31.5254 14.9459 32.9103 14.4643 33.813 14.4484C34.0115 14.4449 34.4554 14.4941 34.743 14.7274C34.9858 14.9245 35.0526 15.1906 35.0846 15.3774C35.1165 15.5642 35.1563 15.9897 35.1247 16.3222C34.7635 20.1172 33.2007 29.3265 32.4056 33.5769C32.0692 35.3755 31.4067 35.9785 30.7654 36.0375C29.3717 36.1658 28.3134 35.1164 26.9635 34.2316C24.8512 32.8469 23.6578 31.985 21.6075 30.6338C19.2379 29.0723 20.774 28.2141 22.1244 26.8115C22.4778 26.4445 28.6186 20.8589 28.7374 20.3523C28.7523 20.2889 28.7661 20.0527 28.6258 19.9279C28.4854 19.8032 28.2783 19.8459 28.1289 19.8798C27.917 19.9279 24.5426 22.1582 18.0055 26.5709C17.0477 27.2286 16.1801 27.5491 15.4028 27.5323C14.5459 27.5138 12.8975 27.0478 11.6721 26.6495C10.1691 26.1609 8.97456 25.9026 9.07858 25.0729C9.13276 24.6407 9.72791 24.1987 10.864 23.7469Z"
+                    fill="white" />
+                </g>
+                <defs>
+                  <linearGradient id="paint0_linear_2125_1247" x1="24" y1="0" x2="24" y2="47.644"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#2AABEE" />
+                    <stop offset="1" stop-color="#229ED9" />
+                  </linearGradient>
+                  <clipPath id="clip0_2125_1247">
+                    <rect width="48" height="48" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <h4 class="fs_md fw_600 text-center pt-3 mb-0">
+                Community <br />
+                discussions
+              </h4>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6 mt-4 mt-sm-0">
+          <a href="/" class="text_light_black">
+            <div class="stay_card d-flex flex-column justify-content-between align-items-center">
+              <svg class="my-1" width="50" height="34" viewBox="0 0 50 34" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_8001_304)">
+                  <path
+                    d="M48.8957 5.30306C48.6089 4.27806 48.0495 3.34361 47.2732 2.59274C46.4968 1.84188 45.5306 1.3008 44.4707 1.0234C40.5907 0 24.9746 0 24.9746 0C24.9746 0 9.35785 0.0309777 5.47777 1.05438C4.41791 1.3318 3.45168 1.8729 2.67532 2.6238C1.89895 3.3747 1.33953 4.30919 1.05277 5.33422C-0.120861 12.0016 -0.576134 22.1612 1.085 28.5619C1.37179 29.5869 1.93122 30.5213 2.70759 31.2722C3.48395 32.0231 4.45016 32.5641 5.51 32.8415C9.39008 33.8649 25.0065 33.8649 25.0065 33.8649C25.0065 33.8649 40.6227 33.8649 44.5026 32.8415C45.5625 32.5642 46.5287 32.0231 47.3051 31.2722C48.0815 30.5214 48.641 29.5869 48.9278 28.5619C50.1657 21.885 50.5471 11.7317 48.8957 5.30306Z"
+                    fill="#FF0000" />
+                  <path d="M20.0039 24.1892L32.9586 16.9325L20.0039 9.67578V24.1892Z" fill="white" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_8001_304">
+                    <rect width="50" height="34" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <h4 class="fs_md fw_600 text-center pt-3 mb-0">
+                Webinar recordings <br />
+                tutorials
+              </h4>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6 mt-4 mt-md-0">
+          <a href="/" class="text_light_black">
+            <div class="stay_card d-flex flex-column justify-content-between align-items-center">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M15.095 43.5015C33.2083 43.5015 43.1155 28.4948 43.1155 15.481C43.1155 15.0548 43.1155 14.6305 43.0867 14.2081C45.0141 12.814 46.6778 11.0878 48 9.11048C46.2028 9.90728 44.2961 10.4296 42.3437 10.6599C44.3996 9.4293 45.9383 7.49349 46.6733 5.21288C44.7402 6.3601 42.6253 7.16853 40.4198 7.60328C38.935 6.02443 36.9712 4.97896 34.8324 4.62865C32.6935 4.27834 30.4988 4.64271 28.5879 5.66539C26.677 6.68806 25.1564 8.31203 24.2615 10.286C23.3665 12.2599 23.1471 14.4738 23.6371 16.585C19.7218 16.3886 15.8915 15.3711 12.3949 13.5985C8.89831 11.8259 5.81353 9.3378 3.3408 6.29576C2.08146 8.46375 1.69574 11.0302 2.2622 13.4726C2.82865 15.915 4.30468 18.0497 6.38976 19.442C4.82246 19.3961 3.2893 18.9733 1.92 18.2094V18.3342C1.92062 20.6079 2.7077 22.8114 4.14774 24.5709C5.58778 26.3304 7.59212 27.5377 9.8208 27.9879C8.37096 28.3834 6.84975 28.4412 5.37408 28.1569C6.00363 30.1135 7.22886 31.8246 8.87848 33.0508C10.5281 34.277 12.5197 34.957 14.5747 34.9959C12.5329 36.6009 10.1946 37.7875 7.69375 38.4879C5.19287 39.1883 2.57843 39.3888 0 39.0778C4.50367 41.9679 9.74385 43.5009 15.095 43.4938"
+                  fill="#1DA1F2" />
+              </svg>
+
+              <h4 class="fs_md fw_600 text-center pt-3 mb-0">
+                Feature updates, <br />
+                announcements
+              </h4>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
+  </section>
+  <!---------------- FOOTER SECTION----------------->
+  <footer class="footer-prop">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-md-4 mb-4 mb-sm-0">
+          <div class="footer-logo">
+            <a href="#"><img src="./assets/images/png/Keepsl_logo.png" class="w-100 h-100" alt="footer logo" /></a>
+          </div>
+          <p class="max-w-footer-txt fw-normal fs_xs text-white fs_xs mb-0 pt-3">
+            KeepSL technologies llp puttenahali(v) jp nagar, 7th phase
+            bengaluru, karnataka,india 560078
+          </p>
+          <div class="d-flex align-items-start justify-content-start flex-column pt-3 pt-md-4">
+            <a href="mailto:whatisthis@gmail.com" class="fw-normal fs_3xs text-white">Email: support@keepSL.com</a>
+            <a href="tel:123456789" class="fw-normal fs_3xs text-white">Tel. 9844858629</a>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 d-flex flex-column align-items-start justify-content-start">
+          <p class="fs_xs text-white">Navigation</p>
+          <a href="#about" class="fs_3xs text-white opacity-75 fw-normal mb-2 footer-link">About Us
+          </a>
+          <a href="#pricing" class="fs_3xs text-white opacity-75 fw-normal mb-2 footer-link">
+            Features
+          </a>
+          <a href="#pricing" class="fs_3xs text-white opacity-75 fw-normal mb-2 footer-link">
+            Pricing
+          </a>
+          <a href="https://app.keepsl.com/docs#/" class="fs_3xs text-white opacity-75 fw-normal mb-2 footer-link">
+            Documentation
+          </a>
+        </div>
+        <div class="col-md-3 col-6 d-flex flex-column align-items-start justify-content-start">
+          <p class="fs_xs text-white">Terms</p>
+          <a href="./refund-policy.html" class="fs_3xs text-white opacity-75 fw-normal mb-2 footer-link">Refund Policy
+          </a>
+          <a href="./terms-and-condition.html" class="fs_3xs text-white opacity-75 fw-normal mb-2 footer-link">
+            Terms and Conditions
+          </a>
+          <a href="./privacy-policy.html" class="fs_3xs text-white opacity-75 fw-normal mb-2 footer-link">
+            Privacy Policy
+          </a>
+        </div>
+      </div>
+      <div class="line d-sm-none d-block"></div>
+      <div
+        class="d-flex align-items-center justify-content-sm-between justify-content-center flex-sm-row flex-column pt-copyright flex-sm-nowrap flex-wrap">
+        <p class="fw-normal text-footer text-white opacity-65 mb-sm-0 mb-1">
+          © 2024 KeepSL. All rights reserved.
+        </p>
+        <div>
+          <a href="https://www.keepsl.com/privacy-policy"
+            class="fw-normal text-footer text-white opacity-65 mb-0 footer-link">Privacy Policy
+          </a>
+          <span class="fw-normal text-footer text-white opacity-65">.</span>
+          <a href="https://www.keepsl.com/terms-and-conditions"
+            class="fw-normal text-footer text-white opacity-65 mb-0 footer-link">
+            Terms & Condition
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <!---------------- SLIDER LINKS------------>
+  <!-- SCROLL TOP -->
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
-      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="./assets/js/app.js"></script>
-    <script type="module">
-      import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
-      const swiper = new Swiper(".swiper", {
-        loop: false,
-        slidesPerView: 1,
-        scrollbar: {
-          el: ".swiper-scrollbar",
-          hide: false,
+  <div class="scroll_top position-fixed shadow cursor z-50 d-flex align-items-center justify-content-center">
+    <div class="scroll_box d-flex align-items-center justify-content-center">
+      <img src="./assets/images/svg/scroll_top_icon.svg" alt="scroll to top icon" class="w-100 h-100" />
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!---------------- SLIDER LINKS------------>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./assets/js/app.js"></script>
+  <script type="module">
+    import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+    const swiper = new Swiper(".swiper", {
+      loop: false,
+      slidesPerView: 1,
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        hide: false,
+      },
+      breakpoints: {
+        576: {
+          slidesPerView: 2,
         },
-        breakpoints: {
-          576: {
-            slidesPerView: 2,
-          },
-          768: {
-            slidesPerView: 3,
-          },
+        768: {
+          slidesPerView: 3,
         },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-          renderBullet: function (index, className) {
-            return '<span class="' + className + '"></span>';
-          },
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '"></span>';
         },
-      });
-    </script>
-  </body>
+      },
+    });
+  </script>
+</body>
+
 </html>

@@ -2,45 +2,151 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>refund-policy</title>
+    <link rel="shortcut icon" href="./assets/images/svg/favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/style/root.css" />
+    <link rel="stylesheet" href="./assets/style/faq.css" />
+    <link rel="stylesheet" href="./assets/style/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/style/faq.css">
-    <link rel="stylesheet" href="./assets/style/root.css">
-    <title>FAQ</title>
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 </head>
 
-<body>
+<body class="d-flex flex-column justify-content-between vh-100">
+    <nav class="navbar_wrapper d-flex bg_dark_blue">
+        <div id="overlay" class="bg-in">
+            <div class="container custom_container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="left d-flex justify-content-center text-center flex-column align-items-center">
+                            <ul class="list-unstyled pt-5 fs_xxs letter_spacing_07">
+                                <li class="py-lg-3 py-2 overflow-hidden">
+                                    <span class="d-inline-block section-1">
+                                        <a href="/" class="overlay_links text_white font_2xl fw_600">Home</a>
+                                    </span>
+                                </li>
+                                <li class="py-lg-3 py-2 overflow-hidden">
+                                    <span class="d-inline-block section-2">
+                                        <a href="#pricing" class="overlay_links text_white font_2xl fw_600">
+                                            Features</a>
+                                    </span>
+                                </li>
+                                <li class="py-lg-3 py-2 overflow-hidden">
+                                    <span class="d-inline-block section-3">
+                                        <a href="#faq" class="overlay_links text_white font_2xl fw_600">FAQ</a>
+                                    </span>
+                                </li>
+                                <li class="py-lg-3 py-2 overflow-hidden">
+                                    <span class="d-inline-block section-4">
+                                        <a href="#pricing" class="overlay_links text_white font_2xl fw_600">
+                                            Pricing</a>
+                                    </span>
+                                </li>
+                                <li class="py-lg-3 py-2 overflow-hidden">
+                                    <span class="d-inline-block section-5">
+                                        <a href="https://app.keepsl.com/docs#/"
+                                            class="overlay_links text_white font_2xl fw_600">
+                                            Documentation</a>
+                                    </span>
+                                </li>
+                                <li class="py-lg-3 py-2 overflow-hidden">
+                                    <span class="d-inline-block section-5">
+                                        <a href="#about" class="overlay_links text_white font_2xl fw_600">About Us</a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container custom_container">
+            <div class="nav_quantum py-3 d-flex justify-content-between align-items-center">
+                <div>
+                    <a href="/">
+                        <img class="hero_logo" src="./assets/images/svg/hero-logo.svg" alt="hero-logo" />
+                    </a>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div class="nav-items-wrap d-none d-lg-block">
+                        <ul
+                            class="nav_items_list list-unstyled align-items-center d-flex align-items-center mb-0 text-uppercase fs_xxs letter_spacing_07">
+                            <li class="n-item pe-3 pe-xl-4 me-xl-2">
+                                <a href="/" class="nav_links font_xsd fw_600 py-1 px-2 transition">Home</a>
+                            </li>
+                            <li class="n-item pe-3 pe-xl-4 me-xl-2">
+                                <a class="nav_links font_xsd fw_600 py-1 px-2" href="#pricing">Features</a>
+                            </li>
+                            <li class="n-item pe-3 pe-xl-4 me-xl-2">
+                                <a href="#faq" class="nav_links font_xsd fw_600 py-1 px-2">FAQ</a>
+                            </li>
+                            <li class="n-item pe-3 pe-xl-4 me-xl-2">
+                                <a href="#pricing" class="nav_links font_xsd fw_600 py-1 px-2">Pricing</a>
+                            </li>
+                            <li class="n-item pe-3 pe-xl-4 me-xl-2">
+                                <a href="https://app.keepsl.com/docs#/"
+                                    class="nav_links font_xsd fw_600 py-1 px-2">Documentation</a>
+                            </li>
+                            <li class="n-item">
+                                <a href="#about" class="nav_links font_xsd fw_600 py-1 px-2">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- TOGGLE BUTTON NAV -->
+                <div class="d-flex align-items-center">
+                    <a href="https://dev-66dbrucx.us.auth0.com/login?state=hKFo2SAwVzdST0xSVHRwMkdmczZCeE5UMXdZVV9tdk5xMVIzT6FupWxvZ2luo3RpZNkgb21RR3JDb2NPRE5qSk53TEpKZGVqa0h1UUx4MFlkbU2jY2lk2SBRWXdwRTRoQml3TlZFYmRYejZ2Q0d0bllBZHp1NHdlYQ&client=QYwpE4hBiwNVEbdXz6vCGtnYAdzu4wea&protocol=oauth2&redirect_uri=https%3A%2F%2Fapp.keepsl.com%2Fcallback&response_type=code&scope=openid%20email%20profile&code_challenge=qCyUWbMHNOihjbFNtpyMXXLjo6r2CBO_z6qbE9-Dz2c&code_challenge_method=S256&max_age=172800&response_mode=form_post&nonce=638573509725170288.YmU2ZWU1MWYtYmFhOS00M2QyLTlmN2YtN2RlMDdjNjFlMTE5YjgzMjkyZDQtZGUxNC00Mjc4LWEzNTItMGZkMWVmODlkODMy&x-client-SKU=ID_NETSTANDARD2_0&x-client-ver=6.10.0.0"
+                        class="login_btn fs_xxs line_height_160 transition me-xl-2">
+                        LOG IN
+                    </a>
+                    <a href="https://dev-66dbrucx.us.auth0.com/login?state=hKFo2SAwVzdST0xSVHRwMkdmczZCeE5UMXdZVV9tdk5xMVIzT6FupWxvZ2luo3RpZNkgb21RR3JDb2NPRE5qSk53TEpKZGVqa0h1UUx4MFlkbU2jY2lk2SBRWXdwRTRoQml3TlZFYmRYejZ2Q0d0bllBZHp1NHdlYQ&client=QYwpE4hBiwNVEbdXz6vCGtnYAdzu4wea&protocol=oauth2&redirect_uri=https%3A%2F%2Fapp.keepsl.com%2Fcallback&response_type=code&scope=openid%20email%20profile&code_challenge=qCyUWbMHNOihjbFNtpyMXXLjo6r2CBO_z6qbE9-Dz2c&code_challenge_method=S256&max_age=172800&response_mode=form_post&nonce=638573509725170288.YmU2ZWU1MWYtYmFhOS00M2QyLTlmN2YtN2RlMDdjNjFlMTE5YjgzMjkyZDQtZGUxNC00Mjc4LWEzNTItMGZkMWVmODlkODMy&x-client-SKU=ID_NETSTANDARD2_0&x-client-ver=6.10.0.0"
+                        class="sign_up_btn fs_xxs letter_spacing_07 transition ms-1 me-3 me-sm-4 me-lg-0">
+                        SIGN UP
+                    </a>
+
+                    <div id="main-menu" class="hamburger_menu d-inline-block d-lg-none">
+                        <span class="first"></span>
+                        <span class="sec"></span>
+                        <span class="third"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
     <!-- ========================================= FAQ SECTION ======================================= -->
     <section class="faq_section pt-4">
-        <div class="container custom_container">
-            <ul class="nav nav-tabs d-flex align-items-center px-2 gap-2" id="myTab" role="tablist">
+        <div class="container custom_container mb-4">
+            <div class="overflow-x-scroll">
+                <ul class="nav nav-tabs d-flex align-items-center px-2 gap-2 flex-nowrap w-fit" id="myTab"
+                    role="tablist">
 
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active Table_Tabs_Btn fw_600 fs_md lh_160 text_rangoon_green" id="home-tab"
-                        data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home"
-                        aria-selected="true">Execution Part</button>
-                </li>
+                    <li class="nav-item" role="presentation">
+                        <button
+                            class="nav-link text-nowrap active Table_Tabs_Btn fw_600 fs_md lh_160 text_rangoon_green"
+                            id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab"
+                            aria-controls="home" aria-selected="true">Execution Part</button>
+                    </li>
 
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link Table_Tabs_Btn fw_600 fs_md lh_160 text_rangoon_green" id="profile-tab"
-                        data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile"
-                        aria-selected="false">Keepsl Platform</button>
-                </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link text-nowrap Table_Tabs_Btn fw_600 fs_md lh_160 text_rangoon_green"
+                            id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab"
+                            aria-controls="profile" aria-selected="false">Keepsl Platform</button>
+                    </li>
 
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link Table_Tabs_Btn fw_600 fs_md lh_160 text_rangoon_green" id="contact-tab"
-                        data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact"
-                        aria-selected="false">Algo Trading</button>
-                </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link text-nowrap Table_Tabs_Btn fw_600 fs_md lh_160 text_rangoon_green"
+                            id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab"
+                            aria-controls="contact" aria-selected="false">Algo Trading</button>
+                    </li>
 
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link Table_Tabs_Btn fw_600 fs_md lh_160 text_rangoon_green" id="Strategies-tab"
-                        data-bs-toggle="tab" data-bs-target="#Strategies" type="button" role="tab"
-                        aria-controls="Strategies" aria-selected="false">Conditional Strategies</button>
-                </li>
-            </ul>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link text-nowrap Table_Tabs_Btn fw_600 fs_md lh_160 text_rangoon_green"
+                            id="Strategies-tab" data-bs-toggle="tab" data-bs-target="#Strategies" type="button"
+                            role="tab" aria-controls="Strategies" aria-selected="false">Conditional Strategies</button>
+                    </li>
+                </ul>
+            </div>
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                     <div class="accordion mt_lg_40 mt-4" id="accordionExample">
@@ -1028,54 +1134,414 @@
                 </div>
 
                 <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                   
-                <div class="accordion accordion-flush mt-3" id="accordionFlushExample1">
-                    <div class="accordion-item mt-3">
-                        <h2 class="accordion-header" id="flush-heading1-21">
-                            <button class="accordion-button collapsed fw_600 text-md" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapse1-21" aria-expanded="false" aria-controls="flush-collapse1-21">
-                                Do keepsl platform support commodity?
-                            </button>
-                        </h2>
-                        <div id="flush-collapse1-21" class="accordion-collapse collapse" aria-labelledby="flush-heading1-21"
-                            data-bs-parent="#accordionFlushExample1">
-                            <div class="accordion-body fs_sm secondary_text_light_black opacity-75">No.</div>
+
+                    <div class="accordion accordion-flush mt-3" id="accordionFlushExample1">
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header" id="flush-heading1-21">
+                                <button class="accordion-button collapsed fw_600 text-md" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapse1-21" aria-expanded="false"
+                                    aria-controls="flush-collapse1-21">
+                                    What are the most commonly used Algorithms for Trading?
+                                </button>
+                            </h2>
+                            <div id="flush-collapse1-21" class="accordion-collapse collapse"
+                                aria-labelledby="flush-heading1-21" data-bs-parent="#accordionFlushExample1">
+                                <div class="accordion-body fs_sm secondary_text_light_black opacity-75">In India,
+                                    Algorithms that use Application Programming Interfaces (API) are the most commonly
+                                    used ones. Here, the
+                                    investor selects the strategy, which he then programmes and are executed by the
+                                    Broker.</div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header" id="flush-heading1-22">
+                                <button class="accordion-button collapsed fw_600 text-md" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapse1-22" aria-expanded="false"
+                                    aria-controls="flush-collapse1-22">
+                                    Is algo trading illegal?
+                                </button>
+                            </h2>
+                            <div id="flush-collapse1-22" class="accordion-collapse collapse"
+                                aria-labelledby="flush-heading1-22" data-bs-parent="#accordionFlushExample1">
+                                <div class="accordion-body fs_sm secondary_text_light_black opacity-75">Yes, algo
+                                    trading is allowed in India and is legal. India introduced algo trading in 2008 with
+                                    SEBI opening the doors of
+                                    algo trading for institutional investors. With the evolution in algo trading, many
+                                    brokers have extended algo trading to
+                                    retail investors as well.</div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header" id="flush-heading1-23">
+                                <button class="accordion-button collapsed fw_600 text-md" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapse1-23" aria-expanded="false"
+                                    aria-controls="flush-collapse1-23">
+                                    What is algo trading?
+                                </button>
+                            </h2>
+                            <div id="flush-collapse1-23" class="accordion-collapse collapse"
+                                aria-labelledby="flush-heading1-23" data-bs-parent="#accordionFlushExample1">
+                                <div class="accordion-body fs_sm secondary_text_light_black opacity-75">Algorithmic
+                                    Trading - Algorithmic Trading is the process of converting a trading strategy into
+                                    an algorithm or computer
+                                    code, and checking whether the strategy provides us with good returns by performing
+                                    backtesting on historical data.
+                                    Avoids human intervention, Maintain Accuracy over longer run
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header" id="flush-heading1-24">
+                                <button class="accordion-button collapsed fw_600 text-md" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapse1-24" aria-expanded="false"
+                                    aria-controls="flush-collapse1-24">
+                                    Is algo trading good for beginners?
+                                </button>
+                            </h2>
+                            <div id="flush-collapse1-24" class="accordion-collapse collapse"
+                                aria-labelledby="flush-heading1-24" data-bs-parent="#accordionFlushExample1">
+                                <div class="accordion-body fs_sm secondary_text_light_black opacity-75">Beginners can
+                                    use algo trading to successfully carry out trading activities without any hassles
+                                    and long trading hours.
+                                    Experts believe that future lies in algo trading and one can make good amount of
+                                    money through it.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header" id="flush-heading1-25">
+                                <button class="accordion-button collapsed fw_600 text-md" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapse1-25" aria-expanded="false"
+                                    aria-controls="flush-collapse1-25">
+                                    What is Automated Trading?
+                                </button>
+                            </h2>
+                            <div id="flush-collapse1-25" class="accordion-collapse collapse"
+                                aria-labelledby="flush-heading1-25" data-bs-parent="#accordionFlushExample1">
+                                <div class="accordion-body fs_sm secondary_text_light_black opacity-75">It is automating
+                                    the overall process of order executions like buying or selling and would often have
+                                    portfolio & risk
+                                    management automated as well..
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header" id="flush-heading1-26">
+                                <button class="accordion-button collapsed fw_600 text-md" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapse1-26" aria-expanded="false"
+                                    aria-controls="flush-collapse1-26">
+                                    Is algo trading profitable?
+                                </button>
+                            </h2>
+                            <div id="flush-collapse1-26" class="accordion-collapse collapse"
+                                aria-labelledby="flush-heading1-26" data-bs-parent="#accordionFlushExample1">
+                                <div class="accordion-body fs_sm secondary_text_light_black opacity-75">Only one in five
+                                    day traders is profitable. Algorithmic trading improves these odds through better
+                                    strategy design,
+                                    testing, and execution.
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header" id="flush-heading1-27">
+                                <button class="accordion-button collapsed fw_600 text-md" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapse1-27" aria-expanded="false"
+                                    aria-controls="flush-collapse1-27">
+                                    How exactly does this work?
+                                </button>
+                            </h2>
+                            <div id="flush-collapse1-27" class="accordion-collapse collapse"
+                                aria-labelledby="flush-heading1-27" data-bs-parent="#accordionFlushExample1">
+                                <div class="accordion-body fs_sm secondary_text_light_black opacity-75">We offer a fully
+                                    automated algorithmic trading system that can be auto-traded by one of registered
+                                    brokers. Absolutely
+                                    no experience is needed, since these algorithms are 100% automated.
+
+                                    The way it works is relatively simple. The algorithms are already loaded on the
+                                    broker’s trade servers, so there is no
+                                    setup required on your part and no need for you to stare at a chart all day waiting
+                                    for an email or text. The trades
+                                    automatically occur on your account and you will get a push telegram notification on
+                                    your phone letting you know a trade
+                                    was initiated, what is your stop/limit is, and much more.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header" id="flush-heading1-28">
+                                <button class="accordion-button collapsed fw_600 text-md" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapse1-28" aria-expanded="false"
+                                    aria-controls="flush-collapse1-28">
+                                    Would algorithmic automation help to overcome the emotional shortcoming in trading?
+                                </button>
+                            </h2>
+                            <div id="flush-collapse1-28" class="accordion-collapse collapse"
+                                aria-labelledby="flush-heading1-28" data-bs-parent="#accordionFlushExample1">
+                                <div class="accordion-body fs_sm secondary_text_light_black opacity-75">Definitely! In
+                                    fact, this is one of the benefits of automating your strategy.
+
+                                    Controlling the emotions, giving you the scalability, giving you the bandwidth that
+                                    you can use to work on the
+                                    strategies while execution is carried out by the machines are some of the key
+                                    benefits that you get by automating at any
+                                    scale.
+
+                                    Unless if you are interfering with your port all the time then nothing can help you
+                                    but assuming you are not doing that
+                                    then yes automation can help.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header" id="flush-heading1-29">
+                                <button class="accordion-button collapsed fw_600 text-md" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapse1-29" aria-expanded="false"
+                                    aria-controls="flush-collapse1-29">
+                                    What is Quantitative Trading?
+                                </button>
+                            </h2>
+                            <div id="flush-collapse1-29" class="accordion-collapse collapse"
+                                aria-labelledby="flush-heading1-29" data-bs-parent="#accordionFlushExample1">
+                                <div class="accordion-body fs_sm secondary_text_light_black opacity-75">Quantitative
+                                    trading involves using advanced mathematical and statistical computations along with
+                                    quantitative analysis
+                                    to devise trading strategies. This can then be executed manually or in an automated
+                                    fashion, depending on the strategy
+                                    (and the strategist!)
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header" id="flush-heading1-30">
+                                <button class="accordion-button collapsed fw_600 text-md" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapse1-30" aria-expanded="false"
+                                    aria-controls="flush-collapse1-30">
+                                    What are the disadvantages of algo trading?
+                                </button>
+                            </h2>
+                            <div id="flush-collapse1-30" class="accordion-collapse collapse"
+                                aria-labelledby="flush-heading1-30" data-bs-parent="#accordionFlushExample1">
+                                <div class="accordion-body fs_sm secondary_text_light_black opacity-75">
+                                    <ul class="list-style-square">
+                                        <li>Knowledge of the programming language- Formulating complex algorithms
+                                            requires extensive know-how of coding software
+                                            such as C+, C++, Java, Python, R, etc. ...</li>
+
+                                        <li>Dependence on technology - Faulty algorithms have the potential to result in
+                                            insurmountable losses for the trader.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header" id="flush-heading1-31">
+                                <button class="accordion-button collapsed fw_600 text-md" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapse1-31" aria-expanded="false"
+                                    aria-controls="flush-collapse1-31">
+                                    What is HFT (High-Frequency) Trading?
+                                </button>
+                            </h2>
+                            <div id="flush-collapse1-31" class="accordion-collapse collapse"
+                                aria-labelledby="flush-heading1-31" data-bs-parent="#accordionFlushExample1">
+                                <div class="accordion-body fs_sm secondary_text_light_black opacity-75">High Frequency
+                                    Trading involves executing orders in an extremely short span of time, usually in a
+                                    sub second, and
+                                    targeting minuscule profit from each trade but doing a vast number of them overall.
+                                    HFT is a subset of Algorithmic
+                                    Trading and given the speed at which you’d need to send the orders, must be
+                                    automated. Interestingly, most of the HFT
+                                    strategies, except for plain vanilla arbitrage, are quite quantitative in nature.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header" id="flush-heading1-32">
+                                <button class="accordion-button collapsed fw_600 text-md" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapse1-32" aria-expanded="false"
+                                    aria-controls="flush-collapse1-32">
+                                    How is Algo trading helpful for retail traders?
+                                </button>
+                            </h2>
+                            <div id="flush-collapse1-32" class="accordion-collapse collapse"
+                                aria-labelledby="flush-heading1-32" data-bs-parent="#accordionFlushExample1">
+                                <div class="accordion-body fs_sm secondary_text_light_black opacity-75">From the
+                                    recipient point of view if you are doing it manually and someone is out there doing
+                                    algo then the benefit to
+                                    you is the bid-ask rate and liquid market. In case you are on the other side where
+                                    you want to do your own trading using
+                                    algorithms, in that case, it gives you much more scale and the number of stocks on
+                                    which you can run each strategy on.
+                                    So instead of monitoring 5 to 10 stocks or 5 to 10 strategies that you can work on
+                                    manually, you can take and multiple
+                                    by 100s. Also, the emotional power and the analysis side can do a lot of wonders
+                                    with the algorithms even if you are not
+                                    doing the execution part with the algorithms.
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header" id="flush-heading1-33">
+                                <button class="accordion-button collapsed fw_600 text-md" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapse1-33" aria-expanded="false"
+                                    aria-controls="flush-collapse1-33">
+                                    So What is Latency?
+                                </button>
+                            </h2>
+                            <div id="flush-collapse1-33" class="accordion-collapse collapse"
+                                aria-labelledby="flush-heading1-33" data-bs-parent="#accordionFlushExample1">
+                                <div class="accordion-body fs_sm secondary_text_light_black opacity-75">Latency is how
+                                    much time you are losing out when you are sending out an order. Basically, it is the
+                                    time taken by the
+                                    order to reach the trading destination or exchange or how much time it is taking to
+                                    process market data, order routing
+                                    and much more.
+
+                                    Latency helps you to identify the appropriate infrastructure will set up your own
+                                    desk. It also helps you to identify if
+                                    you should be picking up a momentum-based strategy or a market making strategy.
+                                </div>
+                            </div>
                         </div>
                     </div>
-                
-                    <div class="accordion-item mt-3">
-                        <h2 class="accordion-header" id="flush-heading1-22">
-                            <button class="accordion-button collapsed fw_600 text-md" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapse1-22" aria-expanded="false" aria-controls="flush-collapse1-22">
-                                Do keepsl platform support commodity?
-                            </button>
-                        </h2>
-                        <div id="flush-collapse1-22" class="accordion-collapse collapse" aria-labelledby="flush-heading1-22"
-                            data-bs-parent="#accordionFlushExample1">
-                            <div class="accordion-body fs_sm secondary_text_light_black opacity-75">No.</div>
-                        </div>
-                    </div>
-                
-                    <div class="accordion-item mt-3">
-                        <h2 class="accordion-header" id="flush-heading1-23">
-                            <button class="accordion-button collapsed fw_600 text-md" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapse1-23" aria-expanded="false" aria-controls="flush-collapse1-23">
-                                Do keepsl platform support commodity?
-                            </button>
-                        </h2>
-                        <div id="flush-collapse1-23" class="accordion-collapse collapse" aria-labelledby="flush-heading1-23"
-                            data-bs-parent="#accordionFlushExample1">
-                            <div class="accordion-body fs_sm secondary_text_light_black opacity-75">No.</div>
-                        </div>
-                    </div>
-                </div>
 
                 </div>
 
-                <div class="tab-pane fade" id="Strategies" role="tabpanel" aria-labelledby="Strategies-tab">...
+                <div class="tab-pane fade" id="Strategies" role="tabpanel" aria-labelledby="Strategies-tab">
+                    <div class="accordion accordion-flush mt-3" id="accordionFlushExample2">
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header" id="flush-heading2-21">
+                                <button class="accordion-button collapsed fw_600 text-md" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapse2-21" aria-expanded="false"
+                                    aria-controls="flush-collapse2-21">
+                                    What are conditional strategies?
+                                </button>
+                            </h2>
+                            <div id="flush-collapse2-21" class="accordion-collapse collapse"
+                                aria-labelledby="flush-heading2-21" data-bs-parent="#accordionFlushExample2">
+                                <div class="accordion-body fs_sm secondary_text_light_black opacity-75">These are
+                                    strategies where in you will execute orders based on certain conditions such as
+                                    Opening Range Breakout(ORB),
+                                    Moving Averages etc</div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header" id="flush-heading2-22">
+                                <button class="accordion-button collapsed fw_600 text-md" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapse2-22" aria-expanded="false"
+                                    aria-controls="flush-collapse2-22">
+                                    How Re Entry feature works?
+                                </button>
+                            </h2>
+                            <div id="flush-collapse2-22" class="accordion-collapse collapse"
+                                aria-labelledby="flush-heading2-22" data-bs-parent="#accordionFlushExample2">
+                                <div class="accordion-body fs_sm secondary_text_light_black opacity-75">
+                                    1. Re-entry AT COST with tries more than once considers average price of all past
+                                    filled orders
+
+
+                                    2. Re-entry AT COST during wild market movements will take trade if price is not
+                                    more than 10% deviated from the cost.
+
+
+                                    3. RE-ENTRY will stop if any order is rejected by broker
+
+
+                                    4. If you want to stop further re-tries in RE- ENTRY. Either disable the strategy or
+                                    square off the strategy from KEEPSL
+                                    Platform. You should not square off using broker, algo won't be aware of this action
+                                    and re-entries will continue on
+                                    algo side.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <!---------------- FOOTER SECTION----------------->
+    <footer class="footer-prop">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-4 mb-4 mb-sm-0">
+                    <div class="footer-logo">
+                        <a href="#"><img src="./assets/images/png/Keepsl_logo.png" class="w-100 h-100"
+                                alt="footer logo" /></a>
+                    </div>
+                    <p class="max-w-footer-txt fw-normal fs_xs text-white fs_xs mb-0 pt-3">
+                        KeepSL technologies llp puttenahali(v) jp nagar, 7th phase
+                        bengaluru, karnataka,india 560078
+                    </p>
+                    <div class="d-flex align-items-start justify-content-start flex-column pt-3 pt-md-4">
+                        <a href="mailto:whatisthis@gmail.com"
+                            class="fw-normal fs_3xs text-white">Email: support@keepSL.com</a>
+                        <a href="tel:123456789" class="fw-normal fs_3xs text-white">Tel. 9844858629</a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 d-flex flex-column align-items-start justify-content-start">
+                    <p class="fs_xs text-white">Navigation</p>
+                    <a href="#about" class="fs_3xs text-white opacity-75 fw-normal mb-2 footer-link">About Us
+                    </a>
+                    <a href="#pricing" class="fs_3xs text-white opacity-75 fw-normal mb-2 footer-link">
+                        Features
+                    </a>
+                    <a href="#pricing" class="fs_3xs text-white opacity-75 fw-normal mb-2 footer-link">
+                        Pricing
+                    </a>
+                    <a href="https://app.keepsl.com/docs#/"
+                        class="fs_3xs text-white opacity-75 fw-normal mb-2 footer-link">
+                        Documentation
+                    </a>
+                </div>
+                <div class="col-md-3 col-6 d-flex flex-column align-items-start justify-content-start">
+                    <p class="fs_xs text-white">Terms</p>
+                    <a href="./refund-policy.html"
+                        class="fs_3xs text-white opacity-75 fw-normal mb-2 footer-link">Refund Policy
+                    </a>
+                    <a href="./terms-and-condition.html"
+                        class="fs_3xs text-white opacity-75 fw-normal mb-2 footer-link">
+                        Terms and Conditions
+                    </a>
+                    <a href="./privacy-policy.html" class="fs_3xs text-white opacity-75 fw-normal mb-2 footer-link">
+                        Privacy Policy
+                    </a>
                 </div>
             </div>
-    </section>
+            <div class="line d-sm-none d-block"></div>
+            <div
+                class="d-flex align-items-center justify-content-sm-between justify-content-center flex-sm-row flex-column pt-copyright flex-sm-nowrap flex-wrap">
+                <p class="fw-normal text-footer text-white opacity-65 mb-sm-0 mb-1">
+                    © 2024 KeepSL. All rights reserved.
+                </p>
+                <div>
+                    <a href="https://www.keepsl.com/privacy-policy"
+                        class="fw-normal text-footer text-white opacity-65 mb-0 footer-link">Privacy Policy
+                    </a>
+                    <span class="fw-normal text-footer text-white opacity-65">.</span>
+                    <a href="https://www.keepsl.com/terms-and-conditions"
+                        class="fw-normal text-footer text-white opacity-65 mb-0 footer-link">
+                        Terms & Condition
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
