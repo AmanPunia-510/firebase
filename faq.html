@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style/faq.css">
+    <link rel="stylesheet" href="./assets/style/root.css">
+    <title>FAQ</title>
+</head>
+
+<body>
+    <!-- ========================================= FAQ SECTION ======================================= -->
+    <section class="faq_section pt-4">
+        <div class="container custom_container">
+            <ul class="nav nav-tabs d-flex align-items-center px-2 gap-2" id="myTab" role="tablist">
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active Table_Tabs_Btn fw_600 fs_md lh_160 text_rangoon_green" id="home-tab"
+                        data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home"
+                        aria-selected="true">Execution Part</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link Table_Tabs_Btn fw_600 fs_md lh_160 text_rangoon_green" id="profile-tab"
+                        data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile"
+                        aria-selected="false">Keepsl Platform</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link Table_Tabs_Btn fw_600 fs_md lh_160 text_rangoon_green" id="contact-tab"
+                        data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact"
+                        aria-selected="false">Algo Trading</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link Table_Tabs_Btn fw_600 fs_md lh_160 text_rangoon_green" id="Strategies-tab"
+                        data-bs-toggle="tab" data-bs-target="#Strategies" type="button" role="tab"
+                        aria-controls="Strategies" aria-selected="false">Conditional Strategies</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="accordion mt_lg_40 mt-4" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fs_md mb-0" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    My orders did not execute?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body ms-3">
+                                    <ul class="list-style-square ps-3 ms-2 max_w_850">
+                                        <span class="fs_sm secondary_text_light_black opacity-75">
+                                            If orders are not executed, please check below items -
+                                        </span>
+                                        <li class="mb-1 mt-1 fs_sm secondary_text_light_black opacity-75">
+                                            1. Check account status - enabled/disabled. It must be enabled for orders to
+                                            execute.
+                                        </li>
+                                        <li class="mb-1 fs_sm secondary_text_light_black opacity-75">
+                                            2. Check Order Execution Window - screen to verify if order is
+                                            scheduled/rejected
+                                        </li>
+                                        <li class="mb-1 fs_sm secondary_text_light_black opacity-75">
+                                            3. Telegram notifications.
+                                        </li>
+                                        <li class="mb-1 fs_sm secondary_text_light_black opacity-75">
+                                            4. You can retry the failed legs by going to manual actions then open now
+                                            then retry failed legs.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs_md mb-0" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    How do I get notified of order executions?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body ms-3">
+                                    <div class="fs_sm secondary_text_light_black opacity-75">Ways to monitor your orders
+                                    </div>
+                                    <ul class="list-style-square ps-3 ms-2 max_w_850">
+                                        <li class="mb-1 fs_sm secondary_text_light_black opacity-75">
+                                            1. Get telegram notifications by subscribing to telegram bot and pinging the
+                                            bot with the registered mail ID
+                                            <img src="./assets/images/webp/Accordian_img.webp" class="w-100 mt-3"
+                                                alt="Accordian_img">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs_md mb-0" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    My orders got rejected?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="mb-1 fs_sm secondary_text_light_black opacity-75 max_w_850">
+                                        Please check the fund status before execution of strategy. Make sure
+                                        sufficient fund available as per the broker/SEBI
+                                        guidelines.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs_md mb-0" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                    aria-controls="collapseFour">
+                                    Strategy executed partial?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="mb-1 fs_sm secondary_text_light_black opacity-75 max_w_850">
+                                        Make sure sufficient funds are available at that point in time. Else,
+                                        telegram will throw error as Order rejected by
+                                        broker. API or Algo errors will set order leg status as FAILED in OEW and
+                                        Telegram notification will be sent. User need
+                                        to manually handle the failed orders.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs_md mb-0" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                                    aria-controls="collapseFive">
+                                    Positional strategy executed but AMO not getting placed.
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="mb-1 fs_sm secondary_text_light_black opacity-75 max_w_850">
+                                        Check the user configuration for Positional SL time. Is it AMO /9.18/9.30
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs_md mb-0" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
+                                    aria-controls="collapseSix">
+                                    SL is hit but MSLC not modified?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="mb-1 fs_sm secondary_text_light_black opacity-75 max_w_850">
+                                        Check under advanced, is MSLC enabled, If the broker exit the position before
+                                        the prices breaches as per the candle data
+                                        algo will not be aware of these SL order closure (Positive slippage scenario)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs_md mb-0" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false"
+                                    aria-controls="collapseSeven">
+                                    SL is hit, but re entry not happened?
+                                </button>
+                            </h2>
+                            <div id="collapseSeven" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="mb-1 fs_sm secondary_text_light_black opacity-75 max_w_850">
+                                        Check the filled price from OEW, It might be a positive slippage scenario,where
+                                        broker exit the leg before it breach the
+                                        SL limit value.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs_md mb-0" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false"
+                                    aria-controls="collapseEight">
+                                    Do I need to login every day and generate token?
+                                </button>
+                            </h2>
+                            <div id="collapseEight" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="mb-1 fs_sm secondary_text_light_black opacity-75 max_w_850">
+                                        As of now no need to login every day with any of the brokers.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs_md mb-0" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false"
+                                    aria-controls="collapseNine">
+                                    What if the Overnight SL is missed due to overnight gap up/gap down?
+                                </button>
+                            </h2>
+                            <div id="collapseNine" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="mb-1 fs_sm secondary_text_light_black opacity-75 max_w_850">
+                                        Algo will handle SL breach scenario in case of gap ups or gap downs, It checks
+                                        the Open orders and Square off in first 3
+                                        mins of the market open with 6 checks in every 30sec. If any SL breach happens
+                                        during spikes between 0915hrs to 1530
+                                        hrs, that SL breach needs to be handled manually.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs_md mb-0" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false"
+                                    aria-controls="collapseTen">
+                                    Order is executed and showing open in telegram but no open positions in broker
+                                    terminal?
+                                </button>
+                            </h2>
+                            <div id="collapseTen" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="mb-1 fs_sm secondary_text_light_black opacity-75 max_w_850">
+                                        Either price clash has done sq off by the broker/Broker UI bug. User can get
+                                        broker Order ID and filled price via OEW,
+                                        User can raise ticket with broker support.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs_md mb-0" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false"
+                                    aria-controls="collapseEleven">
+                                    Algo placing the orders but not received telegram notifications?
+                                </button>
+                            </h2>
+                            <div id="collapseEleven" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="mb-1 fs_sm secondary_text_light_black opacity-75 max_w_850">
+                                        Telegram bot subscription done? Check the OEW.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs_md mb-0" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwelth" aria-expanded="false"
+                                    aria-controls="collapseTwelth">
+                                    P&L mismatch between broker terminal and KeepSL P&L?
+                                </button>
+                            </h2>
+                            <div id="collapseTwelth" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="mb-1 fs_sm secondary_text_light_black opacity-75 max_w_850">
+                                        Check for the filled orders/price in OEW, Algo always calculates based on Avg
+                                        filled price. KeepSL P&L exclude brokerage
+                                        and taxes.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs_md mb-0" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThirt" aria-expanded="false"
+                                    aria-controls="collapseThirt">
+                                    How algo will handle exit partial executed strategy if user don't need to continue
+                                    with the same?
+                                </button>
+                            </h2>
+                            <div id="collapseThirt" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="mb-1 fs_sm secondary_text_light_black opacity-75 max_w_850">
+                                        Enable exit partial strategy under advanced section in KeepSL UI.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs_md mb-0" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFourt" aria-expanded="false"
+                                    aria-controls="collapseFourt">
+                                    What is Entry days column?
+                                </button>
+                            </h2>
+                            <div id="collapseFourt" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="mb-1 fs_sm secondary_text_light_black opacity-75 max_w_850">
+                                        It allows user to select the strategy execution day/Days before weekly expiry
+                                        which varies from 1-4days before monthly
+                                        expiry which varies from 1-28days
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs_md mb-0" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFif" aria-expanded="false"
+                                    aria-controls="collapseFif">
+                                    Account getting verified successfully in KeepSL, but orders not getting executed?
+                                </button>
+                            </h2>
+                            <div id="collapseFif" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="mb-1 fs_sm secondary_text_light_black opacity-75 max_w_850">
+                                        Verify whether broker account is blocked or not. Check fund balance, telegram
+                                        notifications, order Execution Window. if
+                                        still not able to resolve Please send us the screenshot of the rejected message.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs_md mb-0" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapsesixt" aria-expanded="false"
+                                    aria-controls="collapsesixt">
+                                    One leg is executed, Other is not executed, saying telegram message as “No Suitable
+                                    strike found”.
+                                </button>
+                            </h2>
+                            <div id="collapsesixt" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="mb-1 fs_sm secondary_text_light_black opacity-75 max_w_850">
+                                        When a suitable strike is not found, no order is placed. So it's not rejected by
+                                        broker, simply order is not placed as
+                                        no strike available to place any order. <br>
+
+                                        That's why Telegram clearly says "ORDER NOT PLACED". <br>
+
+                                        In this case, user needs to select min as 1 and max as 100, so algo will select
+                                        the price closest to 100. If you select
+                                        min as 80 and max as 100, there are chances that required price may not
+                                        available within this range, it will be missed.
+                                        ie Algo will skip this.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs_md mb-0" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseseve" aria-expanded="false"
+                                    aria-controls="collapseseve">
+                                    Min Value is 1 Rs and Max Value is 5 Rs, but Algo executed 8 Rs ?
+                                </button>
+                            </h2>
+                            <div id="collapseseve" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="mb-1 fs_sm secondary_text_light_black opacity-75 max_w_850">
+                                        For 8rs - it's MARKET order executed. Check candle for that time algo found
+                                        strike correctly but broker can fill at any <br>
+                                        price as its market order. <br>
+
+                                        Note:You can try LIMIT order but there is a risk of order not filling
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs_md mb-0" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseeightt" aria-expanded="false"
+                                    aria-controls="collapseeightt">
+                                    If I enable a new account, will it take trades that day?
+                                </button>
+                            </h2>
+                            <div id="collapseeightt" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="mb-1 fs_sm secondary_text_light_black opacity-75 max_w_850">
+                                        Yes, If you have enabled it before 0830h, it will take trades.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs_md mb-0" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseNinen" aria-expanded="false"
+                                    aria-controls="collapseNinen">
+                                    Holiday is Mon/Tue/Wed. Will algo takes exp-days configuration accordingly?
+                                </button>
+                            </h2>
+                            <div id="collapseNinen" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="mb-1 fs_sm secondary_text_light_black opacity-75 max_w_850">
+                                        Expiry is Thursday, not affected because of Wednesday/Tue/Mon holiday. So algo
+                                        calculates relative to Thursday. So if
+                                        you have any strategy's entry_day as exp_day_before will not work in this case.
+                                        You need to change entry_day with
+                                        respect to to day.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs_md mb-0" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapsetwen" aria-expanded="false"
+                                    aria-controls="collapsetwen">
+                                    My order got squared off, but I see SL in pending orders?
+                                </button>
+                            </h2>
+                            <div id="collapsetwen" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="mb-1 fs_sm secondary_text_light_black opacity-75 max_w_850">
+                                        When there is Price clash and order get squared off by the exchange, If any SL
+                                        orders for that strategy is open, which
+                                        needs to be cancelled manual. Algo will execute this order back if the price is
+                                        seen later anytime in the day.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs_md mb-0" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false"
+                                    aria-controls="collapse1">
+                                    I have login failure, does the algo re login again?
+                                </button>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="mb-1 fs_sm secondary_text_light_black opacity-75 max_w_850">
+                                        Once you receive login fail message, Please go to my accounts section and then
+                                        select your account then press Verify and
+                                        update then only the login will be successful, and your orders will get executed
+                                        after you verify and update.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs_md mb-0" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false"
+                                    aria-controls="collapse2">
+                                    What if you want to select premium closest to Rs100?
+                                </button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="mb-1 fs_sm secondary_text_light_black opacity-75 max_w_850">
+                                        In this case, user needs to select min as 1 and max as 100, so algo will select
+                                        the price closest to 100. If you select
+                                        min as 80 and max as 100, there are chances that required price may not
+                                        available within this range, it will be missed.
+                                        Ie Algo will skip this.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs_md mb-0" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false"
+                                    aria-controls="collapse3">
+                                    What will happen if limit price entry is missed?
+                                </button>
+                            </h2>
+                            <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="mb-1 fs_sm secondary_text_light_black opacity-75 max_w_850">
+                                        If limit entry is missed, Algo will wait for 10 sec and move on, Any SL/Exit has
+                                        to be done by user end.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs_md mb-0" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false"
+                                    aria-controls="collapse4">
+                                    What if my strategy is missed?
+                                </button>
+                            </h2>
+                            <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="mb-1 fs_sm secondary_text_light_black opacity-75 max_w_850">
+                                        If your strategy says missed in OEW, you can try to re-enter by doing following
+                                        action
+
+                                        Go to Manual actions---Open Now----Select Strategy which is missed----Then
+                                        Click Run. Before doing this, check why
+                                        is it missed by clicking on Expand
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs_md mb-0" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false"
+                                    aria-controls="collapse5">
+                                    My orders are placed as NRML instead of MIS, does it impact my margin reqirement?
+                                </button>
+                            </h2>
+                            <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="mb-1 fs_sm secondary_text_light_black opacity-75 max_w_850">
+                                        No, it does not.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs_md mb-0" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false"
+                                    aria-controls="collapse6">
+                                    Overnight SL got rejected by broker with days circuit limit.
+                                </button>
+                            </h2>
+                            <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="mb-1 fs_sm secondary_text_light_black opacity-75 max_w_850">
+                                        Open position need to be handled manual and PnL need to be updated manual. Algo
+                                        will not handle this case as SL order is
+                                        rejected by broker.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs_md mb-0" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false"
+                                    aria-controls="collapse7">
+                                    I am not able to add more than 4 leg, Please clarify
+                                </button>
+                            </h2>
+                            <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="mb-1 fs_sm secondary_text_light_black opacity-75 max_w_850">
+                                        Please check whether you have paid for 4 leg or more, by default 4 legs payment
+                                        is processed, as you select 6 or 8,
+                                        payment for the same is different. No of legs won't affect your execution speed.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs_md mb-0" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false"
+                                    aria-controls="collapse8">
+                                    Does no of legs affect my execution speed?
+                                </button>
+                            </h2>
+                            <div id="collapse8" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="mb-1 fs_sm secondary_text_light_black opacity-75 max_w_850">
+                                        No, number of legs will not have any impact on execution speed.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs_md mb-0" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false"
+                                    aria-controls="collapse9">
+                                    Will execute button execute my strategy as per the timing mentioned in the strategy
+                                    or instantly?
+                                </button>
+                            </h2>
+                            <div id="collapse9" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="mb-1 fs_sm secondary_text_light_black opacity-75 max_w_850">
+                                        Execute button strategy executes strategy instantly irrespective of the time
+                                        mentioned in the strategy. If you execute
+                                        it during non market hours, it will be executed as soon as the market opens the
+                                        very next day/trading session.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="accordion accordion-flush mt-3" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed fw_600 text-md" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    What is keepsl.com?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body fs_sm secondary_text_light_black opacity-75">keepsl.com is
+                                    platform where you can automate your trading strategies in realtime.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed fw_600 text-md" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    Do we get the in built strategies in the platform?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body fs_sm secondary_text_light_black opacity-75">As of now, you
+                                    will not.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed fw_600 text-md" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                    aria-expanded="false" aria-controls="flush-collapseThree">
+                                    How many strategies can I create?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body fs_sm secondary_text_light_black opacity-75">You can create
+                                    as many as you want, but based on the plan you have subcribed.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header" id="flush-headingFour">
+                                <button class="accordion-button collapsed fw_600 text-md" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                    aria-controls="flush-collapseFour">
+                                    Does your platform charges cover the API charges by broker?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body fs_sm secondary_text_light_black opacity-75">No, broker
+                                    charges are separate. Its purely for algo subscription.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header" id="flush-headingFive">
+                                <button class="accordion-button collapsed fw_600 text-md" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                    aria-controls="flush-collapseFive">
+                                    Can I stop at any time?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body fs_sm secondary_text_light_black opacity-75">Yes. The
+                                    algorithms are traded under a letter of direction, meaning you still have access to
+                                    your funds. There is no
+                                    holdout period, if you wish to stop, simply email the broker and let them know.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header" id="flush-headingSix">
+                                <button class="accordion-button collapsed fw_600 text-md" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                    aria-controls="flush-collapseSix">
+                                    Can we close our strategies from keepsl platform?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseSix" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body fs_sm secondary_text_light_black opacity-75">Yes, you cans.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header" id="flush-headingSeven">
+                                <button class="accordion-button collapsed fw_600 text-md" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven"
+                                    aria-expanded="false" aria-controls="flush-collapseSeven">
+                                    If in any case in STBT trade, if there is big gap up/gap down and our strike opens
+                                    above the trigger point of SL ... In
+                                    that case, should we take SL at the open manually?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseSeven" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body fs_sm secondary_text_light_black opacity-75">No, It will be
+                                    handled by the code. It keep checking every thirty second to try to sell for SL
+                                    limit price. After 6
+                                    attempts, after that will close at available CMP ie by 9.18AM code will see if that
+                                    leg is open, it will exit.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header" id="flush-heading8">
+                                <button class="accordion-button collapsed fw_600 text-md" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapse8" aria-expanded="false"
+                                    aria-controls="flush-collapse8">
+                                    My orders not executed today?
+                                </button>
+                            </h2>
+                            <div id="flush-collapse8" class="accordion-collapse collapse"
+                                aria-labelledby="flush-heading8" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body fs_sm secondary_text_light_black opacity-75">Check telegram
+                                    notification, If there is no notification, then check strategy configuration again
+                                    for its correctness.
+                                    Double ensure you have created the strategy correctly and have sufficient fund to
+                                    execute it.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header" id="flush-heading9">
+                                <button class="accordion-button collapsed fw_600 text-md" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapse9" aria-expanded="false"
+                                    aria-controls="flush-collapse9">
+                                    Can I add multiple same broker accounts?
+                                </button>
+                            </h2>
+                            <div id="flush-collapse9" class="accordion-collapse collapse"
+                                aria-labelledby="flush-heading9" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body fs_sm secondary_text_light_black opacity-75">Yes, you can.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header" id="flush-heading99">
+                                <button class="accordion-button collapsed fw_600 text-md" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapse99" aria-expanded="false"
+                                    aria-controls="flush-collapse99">
+                                    Can I trade my own strategy?
+                                </button>
+                            </h2>
+                            <div id="flush-collapse99" class="accordion-collapse collapse"
+                                aria-labelledby="flush-heading99" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body fs_sm secondary_text_light_black opacity-75">Yes, you can
+                                    create your own strategies. Thats the advantage!!
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header" id="flush-heading10">
+                                <button class="accordion-button collapsed fw_600 text-md" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapse10" aria-expanded="false"
+                                    aria-controls="flush-collapse10">
+                                    How to disable algo open or exit?
+                                </button>
+                            </h2>
+                            <div id="flush-collapse10" class="accordion-collapse collapse"
+                                aria-labelledby="flush-heading10" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body fs_sm secondary_text_light_black opacity-75">Pl login to the
+                                    algo platform, there you can select the toggle button to turn it on or off any
+                                    particular strategy.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header" id="flush-heading11">
+                                <button class="accordion-button collapsed fw_600 text-md" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapse11" aria-expanded="false"
+                                    aria-controls="flush-collapse11">
+                                    Is the Profit & Loss report in algo platform includes charges from broker or
+                                    exchanges?
+                                </button>
+                            </h2>
+                            <div id="flush-collapse11" class="accordion-collapse collapse"
+                                aria-labelledby="flush-heading11" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body fs_sm secondary_text_light_black opacity-75">No, its only
+                                    MTM. It do not include any brokerage or STT etc.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header" id="flush-heading12">
+                                <button class="accordion-button collapsed fw_600 text-md" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapse12" aria-expanded="false"
+                                    aria-controls="flush-collapse12">
+                                    MY Auto login getting failed. What could be the reason?
+                                </button>
+                            </h2>
+                            <div id="flush-collapse12" class="accordion-collapse collapse"
+                                aria-labelledby="flush-heading12" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body fs_sm secondary_text_light_black opacity-75">Update password
+                                    in UI. if you have updated.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header" id="flush-heading12">
+                                <button class="accordion-button collapsed fw_600 text-md" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapse13" aria-expanded="false"
+                                    aria-controls="flush-collapse13">
+                                    Is this fully automated or require some manual intervention?
+                                </button>
+                            </h2>
+                            <div id="flush-collapse13" class="accordion-collapse collapse"
+                                aria-labelledby="flush-heading13" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body fs_sm secondary_text_light_black opacity-75">Once you open
+                                    acct and the strategy is created in our platform, everything is fully automated. You
+                                    need not login to
+                                    your broker acct also. If you have sufficient capital, all will be done by algo. Sit
+                                    back and relax, just check your
+                                    telegram notifications to monitor.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header" id="flush-heading12">
+                                <button class="accordion-button collapsed fw_600 text-md" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapse14" aria-expanded="false"
+                                    aria-controls="flush-collapse14">
+                                    Do we get daily profit & loss statement updates?
+                                </button>
+                            </h2>
+                            <div id="flush-collapse14" class="accordion-collapse collapse"
+                                aria-labelledby="flush-heading14" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body fs_sm secondary_text_light_black opacity-75">Yes, at the end
+                                    of the day (EOD) you will be receiving the PnL statements in telegram with coloured
+                                    symbols. It's the
+                                    actual live profits made in all trading strategies in the user's account.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header" id="flush-heading12">
+                                <button class="accordion-button collapsed fw_600 text-md" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapse15" aria-expanded="false"
+                                    aria-controls="flush-collapse15">
+                                    What’s the risk involved?
+                                </button>
+                            </h2>
+                            <div id="flush-collapse15" class="accordion-collapse collapse"
+                                aria-labelledby="flush-heading15" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body fs_sm secondary_text_light_black opacity-75">Its based on the
+                                    individual's created strategies. Follows risk per trade based on its own strategy
+                                    rules.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header" id="flush-heading12">
+                                <button class="accordion-button collapsed fw_600 text-md" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapse16" aria-expanded="false"
+                                    aria-controls="flush-collapse16">
+                                    If I trade with multiple strategies, will it condradict with each other?
+                                </button>
+                            </h2>
+                            <div id="flush-collapse16" class="accordion-collapse collapse"
+                                aria-labelledby="flush-heading16" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body fs_sm secondary_text_light_black opacity-75">No, all
+                                    strategies have independent strat Id. All are separate.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header" id="flush-heading12">
+                                <button class="accordion-button collapsed fw_600 text-md" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapse17" aria-expanded="false"
+                                    aria-controls="flush-collapse17">
+                                    Do you ever re-optimize the algorithms?
+                                </button>
+                            </h2>
+                            <div id="flush-collapse17" class="accordion-collapse collapse"
+                                aria-labelledby="flush-heading17" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body fs_sm secondary_text_light_black opacity-75">Yes, as needed.
+                                    This is included as part of the maintenance of the algorithms. If we find an
+                                    improvement to the existing
+                                    algorithms, we will provide that to our auto-execution brokers and do our best to
+                                    notify all existing customers of the
+                                    change. This tends to occur on a yearly basis, with new ideas being rolled out in
+                                    the first quarter of the new year.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header" id="flush-heading17">
+                                <button class="accordion-button collapsed fw_600 text-md" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapse18" aria-expanded="false"
+                                    aria-controls="flush-collapse18">
+                                    Do you guarantee I will make money every month?
+                                </button>
+                            </h2>
+                            <div id="flush-collapse18" class="accordion-collapse collapse"
+                                aria-labelledby="flush-heading18" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body fs_sm secondary_text_light_black opacity-75">No. The average
+                                    gain per month is an average gain that the algorithms have made in a simulated
+                                    account going back to the
+                                    period indicated. Some months they made more than what is posted, other months they
+                                    made less or posted losses for the
+                                    month. This is an average gain per month using the “per unit” trade size.
+
+                                    Results are based on simulated or hypothetical performance results that have certain
+                                    inherent limitations. Unlike the
+                                    results shown in an actual performance record, these results do not represent actual
+                                    trading. Also, because these trades
+                                    have not actually been executed, these results may have under- or over-compensated
+                                    for the impact, if any, of certain
+                                    market factors, such as lack of liquidity. Simulated or hypothetical trading
+                                    programs in general are also subject to the
+                                    fact that they are designed with the benefit of hindsight. No representation is
+                                    being made that any account will, or is
+                                    likely to, achieve profits or losses similar to these being shown.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header" id="flush-heading17">
+                                <button class="accordion-button collapsed fw_600 text-md" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapse19" aria-expanded="false"
+                                    aria-controls="flush-collapse19">
+                                    My order didn't exit by the algo?
+                                </button>
+                            </h2>
+                            <div id="flush-collapse19" class="accordion-collapse collapse"
+                                aria-labelledby="flush-heading19" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body fs_sm secondary_text_light_black opacity-75">Make sure
+                                    strategy is enabled. Otherwise, algo will ignore the exit.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header" id="flush-heading17">
+                                <button class="accordion-button collapsed fw_600 text-md" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapse20" aria-expanded="false"
+                                    aria-controls="flush-collapse20">
+                                    Do keepsl platform support commodity?
+                                </button>
+                            </h2>
+                            <div id="flush-collapse20" class="accordion-collapse collapse"
+                                aria-labelledby="flush-heading20" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body fs_sm secondary_text_light_black opacity-75">No.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                   
+                <div class="accordion accordion-flush mt-3" id="accordionFlushExample1">
+                    <div class="accordion-item mt-3">
+                        <h2 class="accordion-header" id="flush-heading1-21">
+                            <button class="accordion-button collapsed fw_600 text-md" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapse1-21" aria-expanded="false" aria-controls="flush-collapse1-21">
+                                Do keepsl platform support commodity?
+                            </button>
+                        </h2>
+                        <div id="flush-collapse1-21" class="accordion-collapse collapse" aria-labelledby="flush-heading1-21"
+                            data-bs-parent="#accordionFlushExample1">
+                            <div class="accordion-body fs_sm secondary_text_light_black opacity-75">No.</div>
+                        </div>
+                    </div>
+                
+                    <div class="accordion-item mt-3">
+                        <h2 class="accordion-header" id="flush-heading1-22">
+                            <button class="accordion-button collapsed fw_600 text-md" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapse1-22" aria-expanded="false" aria-controls="flush-collapse1-22">
+                                Do keepsl platform support commodity?
+                            </button>
+                        </h2>
+                        <div id="flush-collapse1-22" class="accordion-collapse collapse" aria-labelledby="flush-heading1-22"
+                            data-bs-parent="#accordionFlushExample1">
+                            <div class="accordion-body fs_sm secondary_text_light_black opacity-75">No.</div>
+                        </div>
+                    </div>
+                
+                    <div class="accordion-item mt-3">
+                        <h2 class="accordion-header" id="flush-heading1-23">
+                            <button class="accordion-button collapsed fw_600 text-md" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapse1-23" aria-expanded="false" aria-controls="flush-collapse1-23">
+                                Do keepsl platform support commodity?
+                            </button>
+                        </h2>
+                        <div id="flush-collapse1-23" class="accordion-collapse collapse" aria-labelledby="flush-heading1-23"
+                            data-bs-parent="#accordionFlushExample1">
+                            <div class="accordion-body fs_sm secondary_text_light_black opacity-75">No.</div>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+
+                <div class="tab-pane fade" id="Strategies" role="tabpanel" aria-labelledby="Strategies-tab">...
+                </div>
+            </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
